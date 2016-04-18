@@ -68,6 +68,8 @@ namespace BeginningASP.NET4._5.ExceptionHandling
                 lblResult.Text = "You tried to divide by zero: " + ex.Message;
                 FlagError = true;
             }
+            //"catching System.Exception is nearly always the wrong thing to do as well." - Brent Rector
+            //https://blogs.msdn.microsoft.com/kcwalina/2006/07/05/choosing-the-right-type-of-exception-to-throw/
             catch (Exception ex)
             {
                 lblResult.Text = "A generic exception occurred: " + ex.Message;
