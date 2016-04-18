@@ -17,6 +17,8 @@ namespace BeginningASP.NET4._5.ExceptionHandling
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Trace.IsEnabled = true;
+
             if (!Page.IsPostBack)
             {
                 lblResult.Visible = false;
@@ -45,6 +47,11 @@ namespace BeginningASP.NET4._5.ExceptionHandling
 
         protected void cmdDivideAbyB_Click(object sender, EventArgs e)
         {
+            //add a message to the trace information
+            Trace.Warn("cmdDivideAbyB_Click", "About to place an item in session state.");
+            Session["Test"] = "Contents";
+            Trace.Warn("cmdDivideAbyB_Click", "Placed item in session state.");
+
             try
             {
                 //try to populate the variables from the user input
@@ -63,6 +70,7 @@ namespace BeginningASP.NET4._5.ExceptionHandling
                     errorMessage = buildErrorMessage(err);
                     errorMessage += "<br />Number to be divided: " + err.Number;
                     errorFlag = true;
+                    Trace.Warn("cmdDivideAbyB_Click", "Caught CustomDivideByZeroException exception", err);
                 }
                 
             }

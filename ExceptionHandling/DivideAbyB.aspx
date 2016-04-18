@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DivideAbyB.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.DivideAbyB" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="DivideAbyB.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.DivideAbyB" %>
 
 <!DOCTYPE html>
 
