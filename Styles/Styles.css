@@ -1,0 +1,26 @@
+﻿.divInput {
+    width: 350px;
+    padding: 5px;
+    margin: 2px;
+    background: rgba(233, 223, 34, 0.79);
+    border: 1px solid rgb(183, 177, 56);
+    overflow:auto;
+}
+
+    .divInput label {
+        float: left;
+    }
+
+    .divInput input,
+    .divInput textarea
+     {
+        float: right;
+    }
+
+#lblResult,
+#lblOutput,
+#lblErrorOutput {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+}

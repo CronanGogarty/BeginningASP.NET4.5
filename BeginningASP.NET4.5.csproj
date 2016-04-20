@@ -65,6 +65,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CrossPagePosting\CrossPage1.aspx" />
+    <Content Include="CrossPagePosting\CrossPage2.aspx" />
+    <Content Include="CrossPagePosting\QueryStringReceiver.aspx" />
+    <Content Include="CrossPagePosting\QueryStringSender.aspx" />
     <Content Include="CurrencyConverter.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="ExceptionHandling\CustomExceptionHandlers.aspx" />
@@ -72,13 +76,45 @@
     <Content Include="Images\defaultpic.png" />
     <Content Include="Global.asax" />
     <Content Include="GreetingsCard.aspx" />
+    <Content Include="SessionState\CreateProduct.aspx" />
     <Content Include="SimpleGreetingCard.aspx" />
+    <Content Include="Styles\Styles.css" />
+    <Content Include="ViewState\SimpleViewStateExample.aspx" />
+    <Content Include="ViewState\StoreObjectInViewState.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="WebFormPageLifecycle.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrossPagePosting\CrossPage1.aspx.cs">
+      <DependentUpon>CrossPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrossPagePosting\CrossPage1.aspx.designer.cs">
+      <DependentUpon>CrossPage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrossPagePosting\CrossPage2.aspx.cs">
+      <DependentUpon>CrossPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrossPagePosting\CrossPage2.aspx.designer.cs">
+      <DependentUpon>CrossPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrossPagePosting\QueryStringReceiver.aspx.cs">
+      <DependentUpon>QueryStringReceiver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrossPagePosting\QueryStringReceiver.aspx.designer.cs">
+      <DependentUpon>QueryStringReceiver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrossPagePosting\QueryStringSender.aspx.cs">
+      <DependentUpon>QueryStringSender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrossPagePosting\QueryStringSender.aspx.designer.cs">
+      <DependentUpon>QueryStringSender.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CurrencyConverter.aspx.cs">
       <DependentUpon>CurrencyConverter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -120,12 +156,35 @@
     </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionState\CreateProduct.aspx.cs">
+      <DependentUpon>CreateProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionState\CreateProduct.aspx.designer.cs">
+      <DependentUpon>CreateProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionState\Product.cs" />
     <Compile Include="SimpleGreetingCard.aspx.cs">
       <DependentUpon>SimpleGreetingCard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SimpleGreetingCard.aspx.designer.cs">
       <DependentUpon>SimpleGreetingCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewState\SerializablePerson.cs" />
+    <Compile Include="ViewState\SimpleViewStateExample.aspx.cs">
+      <DependentUpon>SimpleViewStateExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewState\SimpleViewStateExample.aspx.designer.cs">
+      <DependentUpon>SimpleViewStateExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewState\StoreObjectInViewState.aspx.cs">
+      <DependentUpon>StoreObjectInViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewState\StoreObjectInViewState.aspx.designer.cs">
+      <DependentUpon>StoreObjectInViewState.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormPageLifecycle.aspx.cs">
       <DependentUpon>WebFormPageLifecycle.aspx</DependentUpon>
