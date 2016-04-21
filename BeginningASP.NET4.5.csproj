@@ -79,6 +79,7 @@
     <Content Include="SessionState\CreateProduct.aspx" />
     <Content Include="SimpleGreetingCard.aspx" />
     <Content Include="Styles\Styles.css" />
+    <Content Include="ValidationControls\SimpleValidation.aspx" />
     <Content Include="ViewState\SimpleViewStateExample.aspx" />
     <Content Include="ViewState\StoreObjectInViewState.aspx" />
     <Content Include="Web.config">
@@ -170,6 +171,13 @@
     </Compile>
     <Compile Include="SimpleGreetingCard.aspx.designer.cs">
       <DependentUpon>SimpleGreetingCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationControls\SimpleValidation.aspx.cs">
+      <DependentUpon>SimpleValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidationControls\SimpleValidation.aspx.designer.cs">
+      <DependentUpon>SimpleValidation.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewState\SerializablePerson.cs" />
     <Compile Include="ViewState\SimpleViewStateExample.aspx.cs">
