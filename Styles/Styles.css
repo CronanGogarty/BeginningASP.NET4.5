@@ -12,12 +12,12 @@
     }
 
     .divInput input,
-    .divInput textarea
+    .divInput textarea,
+    .divInput [id^="sel"],
+    .divInput [id^="cmd"],
+    .divInput span[id^="val"]
      {
         float: right;
-    }
-    .divInput span[id^="val"]   {
-        float:right;
     }
 
 #lblResult,
