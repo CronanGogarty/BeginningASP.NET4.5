@@ -1,11 +1,7 @@
 ﻿<%@ Page MasterPageFile="~/BasicTemplate.Master" Title="Currency Converter" Language="C#" AutoEventWireup="true" CodeBehind="CurrencyConverter.aspx.cs" Inherits="BeginningASP.NET4._5.CurrencyConverter" %>
 
-<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
-    <h1>Currency Converter</h1>
-    <p>A simple currency converter example using hard-coded currency conversion arithmetic.</p>
-</asp:Content>
-
 <asp:Content runat="server" ID="Content" ContentPlaceHolderID="ContentPlaceHolder1">
+    <p>A simple currency converter example using hard-coded currency conversion arithmetic.</p>
         <div>
             Convert:&nbsp;
             <input type="text" id="txtUSDollars" runat="server" />

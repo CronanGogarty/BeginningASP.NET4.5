@@ -31,6 +31,24 @@ namespace BeginningASP.NET4._5 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// SiteMapDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource;
+        
+        /// <summary>
+        /// Menu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Menu Menu;
+        
+        /// <summary>
         /// SiteMapPath control.
         /// </summary>
         /// <remarks>
@@ -40,6 +58,15 @@ namespace BeginningASP.NET4._5 {
         protected global::System.Web.UI.WebControls.SiteMapPath SiteMapPath;
         
         /// <summary>
+        /// lblH1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblH1;
+        
+        /// <summary>
         /// header control.
         /// </summary>
         /// <remarks>
@@ -47,6 +74,15 @@ namespace BeginningASP.NET4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
+        
+        /// <summary>
+        /// ContentPlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
         
         /// <summary>
         /// navigation control.
@@ -67,15 +103,6 @@ namespace BeginningASP.NET4._5 {
         protected global::BeginningASP.NET4._5.Controls.SiteMenu ascxSiteMenu;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
-        /// <summary>
         /// footer control.
         /// </summary>
         /// <remarks>
@@ -83,5 +110,23 @@ namespace BeginningASP.NET4._5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder footer;
+        
+        /// <summary>
+        /// lnkPrevSibling control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkPrevSibling;
+        
+        /// <summary>
+        /// lnkNextSibling control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkNextSibling;
     }
 }

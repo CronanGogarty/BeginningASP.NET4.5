@@ -1,40 +1,65 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicTemplate.master.cs" Inherits="BeginningASP.NET4._5.BasicTemplate" %><!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicTemplate.master.cs" Inherits="BeginningASP.NET4._5.BasicTemplate" %>
+
+<!DOCTYPE html>
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
     <title></title>
     <meta name="author" content="Cronán Gogarty" />
-    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
     <link rel="stylesheet" href="~/Styles/Styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:SiteMapDataSource runat="server" ID="SiteMapDataSource" />
+        <asp:Menu runat="server" ID="Menu" DataSourceID="SiteMapDataSource">
+        </asp:Menu>
 
-    <asp:SiteMapPath runat="server" ID="SiteMapPath" ></asp:SiteMapPath>
+        <div id="main">
+            <div id="divSiteMapPath">
+                You are here:
+                <asp:SiteMapPath runat="server" ID="SiteMapPath">
+                    <CurrentNodeTemplate>
+                        <i><%# Eval("Title") %></i>
+                    </CurrentNodeTemplate>
+                </asp:SiteMapPath>
+            </div>
 
-    <div id="main">
+            <div id="mainLeft">
+                <header>
+                    <h1>
+                        <asp:Label runat="server" ID="lblH1"></asp:Label>
+                    </h1>
+                    <asp:ContentPlaceHolder runat="server" ID="header">
+                    </asp:ContentPlaceHolder>
+                </header>
 
-        <header>
-            <asp:ContentPlaceHolder runat="server" ID="header">
-            </asp:ContentPlaceHolder>
-        </header>
-
-        <nav>
-            <asp:ContentPlaceHolder runat="server" ID="navigation">
-                <cronan:SiteMenu runat="server" ID="ascxSiteMenu" />
-            </asp:ContentPlaceHolder>
-        </nav>
-
-        
-        <section id="mainSection">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </section>
-    </div>
+                <section id="mainSection">
+                    <div id="contentHolder">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </section>
+            </div>
+            <div id="mainRight">
+                <nav>
+                    <asp:ContentPlaceHolder runat="server" ID="navigation">
+                        <cronan:SiteMenu runat="server" ID="ascxSiteMenu" />
+                    </asp:ContentPlaceHolder>
+                </nav>
+            </div>
+        </div>
 
         <footer>
             <asp:ContentPlaceHolder runat="server" ID="footer">
-                <ul><li><a href="Default.aspx">Home</a></li> | <li>&copy; Cron&aacute;n Gogarty <%  %></li></ul>
+
+                <ul>
+                    <asp:HyperLink runat="server" ID="lnkPrevSibling" Visible="false"></asp:HyperLink>
+                    <li><a href="Default.aspx">Home</a> | </li>
+                    <li>&copy; Cron&aacute;n Gogarty <%  %></li>
+                    <asp:HyperLink runat="server" ID="lnkNextSibling" Visible="false"></asp:HyperLink>
+                </ul>
+
             </asp:ContentPlaceHolder>
         </footer>
 

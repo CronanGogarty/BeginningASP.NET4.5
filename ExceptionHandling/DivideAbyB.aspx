@@ -1,11 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="DivideAbyB.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.DivideAbyB" %>
+﻿<%@ Page MasterPageFile="~/BasicTemplate.Master" Title="Divide by Zero Exception" Language="C#" AutoEventWireup="True" CodeBehind="DivideAbyB.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.DivideAbyB" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>DivideByZeroException</title>
 
+<asp:Content runat="server" ID="head" ContentPlaceHolderID="head">
     <style>
         .divInput {
             width: 350px;
@@ -25,11 +22,20 @@
             margin-top:20px;
             border:1px solid #fff;
         }
+        #ContentPlaceHolder1_lblResult {
+            background:#fff;
+        }
     </style>
+</asp:Content>
 
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>An example of handling a divide-by-zero exception.
+        <br />
+        Just enter 0 as the divisor and submit to see the exception handling in action.
+    </p>
+</asp:Content>   
+
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="ContentPlaceHolder1">
     <div>
         <div class="divInput"><label for="txtInputA" id="lblInputA">Enter number A:</label>&nbsp;<asp:TextBox ID="txtInputA" runat="server"></asp:TextBox></div>
         <div class="divInput"><label for="txtInputB" id="lblInputB">Enter number B:</label>&nbsp;<asp:TextBox ID="txtInputB" runat="server"></asp:TextBox></div>
@@ -37,6 +43,4 @@
 
         <asp:Label ID="lblResult" runat="server"></asp:Label>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

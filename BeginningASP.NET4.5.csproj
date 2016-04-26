@@ -64,7 +64,11 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web.sitemap" />
+    <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
+    <Content Include="MappingAndRouting\productInfo.aspx" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\Footer.ascx" />
@@ -175,12 +179,26 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="LinkClickEventArgs.cs" />
+    <Compile Include="MappingAndRouting\ThisURLIsMapped.aspx.cs">
+      <DependentUpon>ThisURLIsMapped.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MappingAndRouting\ThisURLIsMapped.aspx.designer.cs">
+      <DependentUpon>ThisURLIsMapped.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\Slave.aspx.cs">
       <DependentUpon>Slave.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPages\Slave.aspx.designer.cs">
       <DependentUpon>Slave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MappingAndRouting\productInfo.aspx.cs">
+      <DependentUpon>productInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MappingAndRouting\productInfo.aspx.designer.cs">
+      <DependentUpon>productInfo.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductTest.aspx.cs">
       <DependentUpon>ProductTest.aspx</DependentUpon>

@@ -62,11 +62,23 @@ namespace BeginningASP.NET4._5
             pnlGreetingCard.BackColor = Color.FromName(lstSelectBackground.SelectedItem.Text);
             lblCopyText.Font.Name = lstSelectFont.SelectedItem.Text;
             //if the font size has been entered in the textbox
-            if (Int32.Parse(txtFontSize.Text) > 0)
+            if ((txtFontSize.Text.Length > 0))
             {
-                //set the font size of the greetings copy
-                lblCopyText.Font.Size = FontUnit.Point(Int32.Parse(txtFontSize.Text));
+                try
+                {
+                    if (Int32.Parse(txtFontSize.Text) > 0)
+                    {
+                        //set the font size of the greetings copy
+                        lblCopyText.Font.Size = FontUnit.Point(Int32.Parse(txtFontSize.Text));
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.Print(ex.Message);
+                    lblCopyText.Font.Size = FontUnit.Point(14);
+                }
             }
+            
             //set the greeting copy
             lblCopyText.Text = txtGreetingCopy.Text;
 

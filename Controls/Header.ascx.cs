@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BeginningASP.NET4._5
+namespace BeginningASP.NET4._5.UserControls
 {
-    public partial class Default1 : System.Web.UI.Page
+    public partial class Header : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {

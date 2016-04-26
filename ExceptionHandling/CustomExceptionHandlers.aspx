@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CustomExceptionHandlers.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.CustomExceptionHandlers" %>
+﻿<%@ Page MasterPageFile="~/BasicTemplate.Master" Title="Custom Exception Handlers" Language="C#" AutoEventWireup="true" CodeBehind="CustomExceptionHandlers.aspx.cs" Inherits="BeginningASP.NET4._5.ExceptionHandling.CustomExceptionHandlers" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>CustomExceptionHandlers</title>
+<asp:Content runat="server" ID="head" ContentPlaceHolderID="head">
     <style>
         .divInput {
             width: 350px;
@@ -25,10 +21,16 @@
             border:1px solid #fff;
         }
     </style>
+</asp:Content>
 
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This page demonstrates handling a Custom Exception.
+        <br />
+        Submit the form with empty textboxes to see the exception handling in action.
+    </p>
+</asp:Content>
+
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="ContentPlaceHolder1">
     <div>
         <div class="divInput"><label for="txtInputA" id="lblInputA">Enter number A:</label>&nbsp;<asp:TextBox ID="txtInputA" runat="server"></asp:TextBox></div>
         <div class="divInput"><label for="txtInputB" id="lblInputB">Enter number B:</label>&nbsp;<asp:TextBox ID="txtInputB" runat="server"></asp:TextBox></div>
@@ -36,6 +38,4 @@
 
         <asp:Label ID="lblResult" runat="server"></asp:Label>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

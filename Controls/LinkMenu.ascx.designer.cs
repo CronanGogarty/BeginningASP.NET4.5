@@ -7,45 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BeginningASP.NET4._5.ExceptionHandling {
+namespace BeginningASP.NET4._5.Controls {
     
     
-    public partial class CustomExceptionHandlers {
+    public partial class LinkMenu {
         
         /// <summary>
-        /// txtInputA control.
+        /// lnkLlink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInputA;
+        protected global::System.Web.UI.WebControls.LinkButton lnkLlink1;
         
         /// <summary>
-        /// txtInputB control.
+        /// lnkLlink2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInputB;
+        protected global::System.Web.UI.WebControls.LinkButton lnkLlink2;
         
         /// <summary>
-        /// cmdDivideAbyB control.
+        /// lnkLlink3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cmdDivideAbyB;
-        
-        /// <summary>
-        /// lblResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResult;
+        protected global::System.Web.UI.WebControls.LinkButton lnkLlink3;
     }
 }

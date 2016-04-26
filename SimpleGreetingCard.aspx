@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SimpleGreetingCard.aspx.cs" Inherits="BeginningASP.NET4._5.SimpleGreetingCard" %>
+﻿<%@ Page MasterPageFile="~/BasicTemplate.Master" Title="Simple Greetings Card" Language="C#" AutoEventWireup="true" CodeBehind="SimpleGreetingCard.aspx.cs" Inherits="BeginningASP.NET4._5.SimpleGreetingCard" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Simple Greeting Card</title>
-
+<asp:Content ContentPlaceHolderID="head" runat="server" ID="head">
     <style>
         #optionsDiv {
             width:45%;
@@ -39,7 +34,7 @@
         #chkDefaultImg,
         #lblDefaultImg,
         input[type="radio"],
-        label[for^="optBorderStyle_"] {
+        label[for*="optBorderStyle_"] {
             display:inline;
         }
         #optionsDiv > label,
@@ -47,10 +42,13 @@
             margin-top:20px;
         }
     </style>
+</asp:Content>
 
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p></p>
+</asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1" ID="Content">
     <div>
         <div id="optionsDiv">
             <label for="lstSelectBackground" id="lblSelBG">Choose card background color:</label>
@@ -64,7 +62,7 @@
             <label for="optBorderStyle" id="lblBorderStyle">Choose border style:</label>
             <asp:RadioButtonList ID="optBorderStyle" runat="server">
             </asp:RadioButtonList>
-            <asp:CheckBox ID="chkDefaultImg"  runat="server" />
+            <asp:CheckBox ID="chkDefaultImg" runat="server" Checked="true" />
             <label for="chkDefaultImg" id="lblDefaultImg">Add default image:</label>
             <label for="txtGreetingCopy" id="lblGreetingCopy">Add the greeting copy:</label>
             <asp:TextBox ID="txtGreetingCopy" TextMode="MultiLine" runat="server"></asp:TextBox>
@@ -76,6 +74,4 @@
             <asp:Image ID="imgGreetingCardImage" runat="server" />
         </asp:Panel>
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

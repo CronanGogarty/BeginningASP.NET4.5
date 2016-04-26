@@ -7,99 +7,126 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BeginningASP.NET4._5 {
+namespace BeginningASP.NET4._5.ValidationControls {
     
     
-    public partial class SimpleGreetingCard {
+    public partial class ValidationGroups {
         
         /// <summary>
-        /// lstSelectBackground control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList lstSelectBackground;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lstSelectFont control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList lstSelectFont;
+        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
-        /// txtFontSize control.
+        /// vldFirstNameRqdFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFontSize;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldFirstNameRqdFieldValidator;
         
         /// <summary>
-        /// optBorderStyle control.
+        /// vldFirstNameCustomValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList optBorderStyle;
+        protected global::System.Web.UI.WebControls.CustomValidator vldFirstNameCustomValidator;
         
         /// <summary>
-        /// chkDefaultImg control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkDefaultImg;
+        protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
-        /// txtGreetingCopy control.
+        /// vldLastNameRqdFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGreetingCopy;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldLastNameRqdFieldValidator;
         
         /// <summary>
-        /// cmdUpdate control.
+        /// vldLastNameCustomValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cmdUpdate;
+        protected global::System.Web.UI.WebControls.CustomValidator vldLastNameCustomValidator;
         
         /// <summary>
-        /// pnlGreetingCard control.
+        /// cmdValidateName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlGreetingCard;
+        protected global::System.Web.UI.WebControls.Button cmdValidateName;
         
         /// <summary>
-        /// lblCopyText control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCopyText;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
-        /// imgGreetingCardImage control.
+        /// vldEmailRqdFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgGreetingCardImage;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldEmailRqdFieldValidator;
+        
+        /// <summary>
+        /// vldEmailRegExpValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator vldEmailRegExpValidator;
+        
+        /// <summary>
+        /// cmdValidateEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cmdValidateEmail;
+        
+        /// <summary>
+        /// lblOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOutput;
     }
 }

@@ -1,18 +1,9 @@
-﻿<%@ Page Language="C#" %>
+﻿<%@ Page Title="Home | Beginning ASP.NET 4.5" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="BeginningASP.NET4._5.Default1" %>
 
-<!DOCTYPE html>
-
-<script runat="server">
-    private void Page_Load(object sender, EventArgs e)
-    {
-        Product saleProduct = new Product("Kitchen Garbage", 49.99M, "Images/garbage.jpg");
-        Response.Write(saleProduct.GetHtml());
-    }
-</script>
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head>
-    <title>Product Test</title>
-</head>
-<body></body>
-</html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <meta name="keywords" content="table of contents" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label runat="server" ID="lblHelloWorld"></asp:Label>
+            <p>Code written while reading the book "Beginning ASP.NET 4.5" by <author>Some Guy</author> and published by Apress.</p>
+</asp:Content>

@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GreetingsCard.aspx.cs" Inherits="BeginningASP.NET4._5.GreetingsCard" %>
+﻿<%@ Page MasterPageFile="~/BasicTemplate.Master" Title="Greetings Card" Language="C#" AutoEventWireup="true" CodeBehind="GreetingsCard.aspx.cs" Inherits="BeginningASP.NET4._5.GreetingsCard" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-
+<asp:Content runat="server" ID="head" ContentPlaceHolderID="head">
     <style>
         #optionsDiv {
             width:45%;
@@ -39,7 +34,7 @@
         #chkDefaultImg,
         #lblDefaultImg,
         input[type="radio"],
-        label[for^="optBorderStyle_"] {
+        label[for*="optBorderStyle_"] {
             display:inline;
         }
         #optionsDiv > label,
@@ -47,11 +42,16 @@
             margin-top:20px;
         }
     </style>
+</asp:Content>
 
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>Use the options below to generate a personalized greetings card.
+        <br />
+        This page uses AutoPostback features to update the greetings card immediately.
+    </p>
+</asp:Content>
+
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="ContentPlaceHolder1">
         <div id="optionsDiv">
             <label for="lstSelectBackground" id="lblSelBG">Choose card background color:</label>
             <asp:DropDownList ID="lstSelectBackground" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ControlChanged">
@@ -64,7 +64,7 @@
             <label for="optBorderStyle" id="lblBorderStyle">Choose border style:</label>
             <asp:RadioButtonList ID="optBorderStyle" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ControlChanged">
             </asp:RadioButtonList>
-            <asp:CheckBox ID="chkDefaultImg"  runat="server" AutoPostBack="true" OnCheckedChanged="ControlChanged" />
+            <asp:CheckBox ID="chkDefaultImg" Checked="true" runat="server" AutoPostBack="true" OnCheckedChanged="ControlChanged" />
             <label for="chkDefaultImg" id="lblDefaultImg">Add default image:</label>
             <label for="txtGreetingCopy" id="lblGreetingCopy">Add the greeting copy:</label>
             <asp:TextBox ID="txtGreetingCopy" TextMode="MultiLine" runat="server" AutoPostBack="true" OnTextChanged="ControlChanged"></asp:TextBox>
@@ -75,7 +75,5 @@
             <asp:Label ID="lblCopyText" runat="server"></asp:Label>
             <asp:Image ID="imgGreetingCardImage" runat="server" />
         </asp:Panel>
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

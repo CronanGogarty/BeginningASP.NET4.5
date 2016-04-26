@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="Beginning ASP.NET 4.5"  description="Home">
+      <siteMapNode url="~/ProductTest.aspx" title="Get Product Details" description="Get Product Details" />
+      <siteMapNode url="~/CurrencyConverter.aspx" title="Currency Converter"  description="Currency Converter" />
+      <siteMapNode url="~/SimpleGreetingCard.aspx" title="Simple Greeting Card" description="Simple Greeting Card" />
+      <siteMapNode url="~/GreetingsCard.aspx" title="Greeting Card"  description="Greeting Card" />
+      <siteMapNode title="Exception Handling" description="Exception Handling Code">
+        <siteMapNode title="Custom Exception Handlers" url="~/ExceptionHandling/CustomExceptionHandlers.aspx" />
+        <siteMapNode title="Division Exception" url="~/ExceptionHandling/DivideAbyB.aspx" description="An example of handling a divide-by-zero exception" />
+      </siteMapNode>
+      <siteMapNode title="Mapping and Routing" description="URL Mapping and URL Routing">
+        <siteMapNode url="~/MappingAndRouting/MapThisURL.aspx" title="URL Mapping" description="URL Mapping Example" />
+        <siteMapNode url="~/MappingAndRouting/product/product123" title="Routed URL" description="This URL has been rerouted in the Global.asax" />
+      </siteMapNode>
+    </siteMapNode>
+    
+</siteMap>
