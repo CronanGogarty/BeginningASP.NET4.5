@@ -57,30 +57,44 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BasicTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\LinkMenu.ascx" />
+    <Content Include="Controls\SiteMenu.ascx" />
     <Content Include="CrossPagePosting\CrossPage1.aspx" />
     <Content Include="CrossPagePosting\CrossPage2.aspx" />
     <Content Include="CrossPagePosting\QueryStringReceiver.aspx" />
     <Content Include="CrossPagePosting\QueryStringSender.aspx" />
     <Content Include="CurrencyConverter.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\IMG_1640.JPG" />
+    <Content Include="MasterPages\Slave.aspx" />
+    <Content Include="ProductTest.aspx" />
     <Content Include="ExceptionHandling\CustomExceptionHandlers.aspx" />
     <Content Include="ExceptionHandling\DivideAbyB.aspx" />
     <Content Include="Images\defaultpic.png" />
     <Content Include="Global.asax" />
     <Content Include="GreetingsCard.aspx" />
+    <Content Include="RichControls\DateControl.aspx" />
+    <Content Include="RichControls\MultiView.aspx" />
     <Content Include="SessionState\CreateProduct.aspx" />
     <Content Include="SimpleGreetingCard.aspx" />
     <Content Include="Styles\Styles.css" />
+    <Content Include="Controls\90days.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="UserControls\ConsumeControls.aspx" />
     <Content Include="ValidationControls\SimpleValidation.aspx" />
     <Content Include="ValidationControls\ValidationForm.aspx" />
+    <Content Include="ValidationControls\ValidationGroups.aspx" />
     <Content Include="ViewState\SimpleViewStateExample.aspx" />
     <Content Include="ViewState\StoreObjectInViewState.aspx" />
     <Content Include="Web.config">
@@ -89,6 +103,34 @@
     <Content Include="WebFormPageLifecycle.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicTemplate.Master.cs">
+      <DependentUpon>BasicTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicTemplate.Master.designer.cs">
+      <DependentUpon>BasicTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LinkMenu.ascx.cs">
+      <DependentUpon>LinkMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkMenu.ascx.designer.cs">
+      <DependentUpon>LinkMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SiteMenu.ascx.cs">
+      <DependentUpon>SiteMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SiteMenu.ascx.designer.cs">
+      <DependentUpon>SiteMenu.ascx</DependentUpon>
+    </Compile>
     <Compile Include="CrossPagePosting\CrossPage1.aspx.cs">
       <DependentUpon>CrossPage1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +174,21 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LinkClickEventArgs.cs" />
+    <Compile Include="MasterPages\Slave.aspx.cs">
+      <DependentUpon>Slave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Slave.aspx.designer.cs">
+      <DependentUpon>Slave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTest.aspx.cs">
+      <DependentUpon>ProductTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductTest.aspx.designer.cs">
+      <DependentUpon>ProductTest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExceptionHandling\CustomExceptionHandlers.aspx.cs">
       <DependentUpon>CustomExceptionHandlers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,6 +215,20 @@
     </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichControls\DateControl.aspx.cs">
+      <DependentUpon>DateControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichControls\DateControl.aspx.designer.cs">
+      <DependentUpon>DateControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RichControls\MultiView.aspx.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichControls\MultiView.aspx.designer.cs">
+      <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SessionState\CreateProduct.aspx.cs">
       <DependentUpon>CreateProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,6 +244,27 @@
     <Compile Include="SimpleGreetingCard.aspx.designer.cs">
       <DependentUpon>SimpleGreetingCard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\90days.ascx.cs">
+      <DependentUpon>90days.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\90days.ascx.designer.cs">
+      <DependentUpon>90days.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ConsumeControls.aspx.cs">
+      <DependentUpon>ConsumeControls.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ConsumeControls.aspx.designer.cs">
+      <DependentUpon>ConsumeControls.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ValidationControls\SimpleValidation.aspx.cs">
       <DependentUpon>SimpleValidation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -186,6 +278,13 @@
     </Compile>
     <Compile Include="ValidationControls\ValidationForm.aspx.designer.cs">
       <DependentUpon>ValidationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationControls\ValidationGroups.aspx.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidationControls\ValidationGroups.aspx.designer.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewState\SerializablePerson.cs" />
     <Compile Include="ViewState\SimpleViewStateExample.aspx.cs">

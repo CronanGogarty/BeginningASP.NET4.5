@@ -1,4 +1,46 @@
-﻿.divInput {
+﻿html    {
+    background-image: url(../Images/IMG_1640.JPG);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:auto;
+    background-position:center,center;
+}
+body    {
+    background:rgba(51, 204, 255, 0.4);
+    padding:3%;
+}
+header {
+    width:auto;
+    float:left;
+}
+#main   {
+    background:rgba(233, 223, 34, 0.5);
+    padding:2%;
+    overflow:auto;
+}
+#mainSection {
+    clear:both;
+}
+nav {
+    width:20%;
+    /*outline:3px solid rgba(51, 204, 255, 0.8);*/
+    background:rgba(255, 255, 255, 0.8);
+    float:right;
+}
+footer {
+    background:rgba(255,255,255,0.8);
+    text-align:center;
+}
+footer,
+nav,
+#main {
+    outline:1px solid #000;
+}
+footer ul li {
+    list-style:none;
+    display:inline;
+}
+.divInput {
     width: 500px;
     padding: 5px;
     margin: 2px;

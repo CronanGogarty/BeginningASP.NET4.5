@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BasicTemplate.master.cs" Inherits="BeginningASP.NET4._5.BasicTemplate" %><!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="author" content="Cronán Gogarty" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="~/Styles/Styles.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <asp:SiteMapPath runat="server" ID="SiteMapPath" ></asp:SiteMapPath>
+
+    <div id="main">
+
+        <header>
+            <asp:ContentPlaceHolder runat="server" ID="header">
+            </asp:ContentPlaceHolder>
+        </header>
+
+        <nav>
+            <asp:ContentPlaceHolder runat="server" ID="navigation">
+                <cronan:SiteMenu runat="server" ID="ascxSiteMenu" />
+            </asp:ContentPlaceHolder>
+        </nav>
+
+        
+        <section id="mainSection">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+    </div>
+
+        <footer>
+            <asp:ContentPlaceHolder runat="server" ID="footer">
+                <ul><li><a href="Default.aspx">Home</a></li> | <li>&copy; Cron&aacute;n Gogarty <%  %></li></ul>
+            </asp:ContentPlaceHolder>
+        </footer>
+
+    </form>
+</body>
+</html>
