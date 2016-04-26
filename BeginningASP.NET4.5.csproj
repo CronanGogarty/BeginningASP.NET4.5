@@ -57,6 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ADO.NET\ConnectionStoredInWebConfig.aspx" />
+    <Content Include="ADO.NET\SimpleDirectQuery.aspx" />
+    <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -107,6 +110,27 @@
     <Content Include="WebFormPageLifecycle.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO.NET\ConnectionStoredInWebConfig.aspx.cs">
+      <DependentUpon>ConnectionStoredInWebConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\ConnectionStoredInWebConfig.aspx.designer.cs">
+      <DependentUpon>ConnectionStoredInWebConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.NET\SimpleDirectQuery.aspx.cs">
+      <DependentUpon>SimpleDirectQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\SimpleDirectQuery.aspx.designer.cs">
+      <DependentUpon>SimpleDirectQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.NET\UsingTheCommand.aspx.cs">
+      <DependentUpon>UsingTheCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\UsingTheCommand.aspx.designer.cs">
+      <DependentUpon>UsingTheCommand.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BasicTemplate.Master.cs">
       <DependentUpon>BasicTemplate.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
