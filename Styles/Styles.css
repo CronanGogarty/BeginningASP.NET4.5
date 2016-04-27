@@ -105,9 +105,9 @@ footer a:hover {
     float:right;
 }
 .divInput {
-    width: 500px;
-    padding: 5px;
-    margin: 2px;
+    width: auto;
+    padding: 1%;
+    margin: 1%;
     background: rgba(233, 223, 34, 0.79);
     border: 1px solid rgb(183, 177, 56);
     overflow:auto;

@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ADO.NET\ConnectionStoredInWebConfig.aspx" />
+    <Content Include="ADO.NET\DatabaseInteractions.aspx" />
     <Content Include="ADO.NET\SimpleDirectQuery.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
@@ -116,6 +117,13 @@
     </Compile>
     <Compile Include="ADO.NET\ConnectionStoredInWebConfig.aspx.designer.cs">
       <DependentUpon>ConnectionStoredInWebConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.NET\DatabaseInteractions.aspx.cs">
+      <DependentUpon>DatabaseInteractions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\DatabaseInteractions.aspx.designer.cs">
+      <DependentUpon>DatabaseInteractions.aspx</DependentUpon>
     </Compile>
     <Compile Include="ADO.NET\SimpleDirectQuery.aspx.cs">
       <DependentUpon>SimpleDirectQuery.aspx</DependentUpon>

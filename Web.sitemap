@@ -17,7 +17,8 @@
         <siteMapNode url="~/ADO.NET/SimpleDirectQuery.aspx" title="Direct Connection" description="Connect to db directly in the page code, execute SQL query" />
         <siteMapNode url="~/ADO.NET/ConnectionStoredInWebConfig.aspx" title="Web Config Connection" description="Use the ConnectionString variable set in Web.Config" />
         <siteMapNode url="~/ADO.NET/UsingTheCommand.aspx" title="Using SQLCommand Object" description="Use the SQLCommand object to execute a SQL query" />
-
+        <siteMapNode url="~/ADO.NET/DatabaseInteractions.aspx" title="Database Interactions" description="Common database interactions such as Insert, Update, Delete" />
+        
 
       </siteMapNode>
     </siteMapNode>
