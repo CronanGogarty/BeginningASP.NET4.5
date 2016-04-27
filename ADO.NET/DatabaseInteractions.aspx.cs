@@ -46,6 +46,8 @@ namespace BeginningASP.NET4._5.ADO.NET
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            result = errorMessage = au_id = "";
+            errorRaised = connectionOpened = false;
             this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
 
             if (!Page.IsPostBack)
@@ -133,73 +135,81 @@ namespace BeginningASP.NET4._5.ADO.NET
 
         protected void cmdInsertNew_Click(object sender, EventArgs e)
         {
-            try
+            if (Page.IsValid)
             {
-                string strFname, strLname, strPhone, strAddress, strCity, strState, strZip, strId = "";
-                strFname = txtFirstName.Text;
-                strLname = txtLastName.Text;
-                strPhone = txtPhone.Text;
-                strAddress = txtAddress.Text;
-                strCity = txtCity.Text;
-                strState = txtState.Text;
-                strZip = txtZipCode.Text;
-                strId = txtUniqueID.Text;
-
-                commandText = "INSERT INTO dbo.authors (au_id, au_lname, au_fname, phone, address, city, state, zip, contract)";
-                commandText += "VALUES('";
-                commandText += strId + "', '" + strLname + "', '" + strFname + "', '" + strPhone + "', '" + strAddress + "', '" + strCity + "', '" + strState + "', '" + strZip + "', '" + Convert.ToInt16(chkContract.Checked) + "')";
-                result = commandText;
-
-                connectionOpened = openDatabase();
-
-                if (connectionOpened)
+                try
                 {
-                    using (connection)
-                    {
-                        try
-                        {
-                            int number = command.ExecuteNonQuery();
-                            if (number > 0)
-                            {
-                                result = "Number of rows affected: " + number;
-                            }
-                        }
-                        catch (SqlException ex)
-                        {
-                            printExceptions(ex);
-                        }
-                        catch (NullReferenceException ex)
-                        {
-                            printExceptions(ex);
-                        }
-                        catch (Exception ex)
-                        {
-                            printExceptions(ex);
-                        }
-                        finally
-                        {
-                            connection.Close();
-                        }
+                    string strFname, strLname, strPhone, strAddress, strCity, strState, strZip, strId = "";
+                    strFname = txtFirstName.Text;
+                    strLname = txtLastName.Text;
+                    strPhone = txtPhone.Text;
+                    strAddress = txtAddress.Text;
+                    strCity = txtCity.Text;
+                    strState = txtState.Text;
+                    strZip = txtZipCode.Text;
+                    strId = txtUniqueID.Text;
 
+                    commandText = "INSERT INTO dbo.authors (au_id, au_lname, au_fname, phone, address, city, state, zip, contract)";
+                    commandText += "VALUES('";
+                    commandText += strId + "', '" + strLname + "', '" + strFname + "', '" + strPhone + "', '" + strAddress + "', '" + strCity + "', '" + strState + "', '" + strZip + "', '" + Convert.ToInt16(chkContract.Checked) + "')";
+                    result = commandText;
+
+                    connectionOpened = openDatabase();
+
+                    if (connectionOpened)
+                    {
+                        using (connection)
+                        {
+                            try
+                            {
+                                int number = command.ExecuteNonQuery();
+                                if (number > 0)
+                                {
+                                    result = "Number of rows affected: " + number;
+                                }
+                            }
+                            catch (SqlException ex)
+                            {
+                                printExceptions(ex);
+                            }
+                            catch (NullReferenceException ex)
+                            {
+                                printExceptions(ex);
+                            }
+                            catch (Exception ex)
+                            {
+                                printExceptions(ex);
+                            }
+                            finally
+                            {
+                                connection.Close();
+                            }
+
+                        }
                     }
                 }
-            }
 
-            catch (NullReferenceException ex)
-            {
-                printExceptions(ex);
+                catch (NullReferenceException ex)
+                {
+                    printExceptions(ex);
+                }
+                catch (FormatException ex)
+                {
+                    printExceptions(ex);
+                }
+                catch (InvalidCastException ex)
+                {
+                    printExceptions(ex);
+                }
+                catch (Exception ex)
+                {
+                    printExceptions(ex);
+                }
             }
-            catch (FormatException ex)
+            else
             {
-                printExceptions(ex);
-            }
-            catch (InvalidCastException ex)
-            {
-                printExceptions(ex);
-            }
-            catch (Exception ex)
-            {
-                printExceptions(ex);
+                errorMessage = "Page was not validated:<br />No database commands were executed";
+                errorRaised = true;
             }
         }
 

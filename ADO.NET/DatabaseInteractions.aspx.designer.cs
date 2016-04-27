@@ -94,6 +94,15 @@ namespace BeginningASP.NET4._5.ADO.NET {
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
         
         /// <summary>
+        /// vldFirstNameRqdFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldFirstNameRqdFieldValidator;
+        
+        /// <summary>
         /// txtLastName control.
         /// </summary>
         /// <remarks>
@@ -103,6 +112,15 @@ namespace BeginningASP.NET4._5.ADO.NET {
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
         
         /// <summary>
+        /// vldLastNameRqdFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldLastNameRqdFieldValidator;
+        
+        /// <summary>
         /// txtPhone control.
         /// </summary>
         /// <remarks>
@@ -110,6 +128,24 @@ namespace BeginningASP.NET4._5.ADO.NET {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPhone;
+        
+        /// <summary>
+        /// vldPhoneRqdFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator vldPhoneRqdFieldValidator;
+        
+        /// <summary>
+        /// vldPhoneRegExpValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator vldPhoneRegExpValidator;
         
         /// <summary>
         /// txtAddress control.
@@ -146,6 +182,15 @@ namespace BeginningASP.NET4._5.ADO.NET {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtZipCode;
+        
+        /// <summary>
+        /// vldZipRegExpValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator vldZipRegExpValidator;
         
         /// <summary>
         /// chkContract control.

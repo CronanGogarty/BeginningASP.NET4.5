@@ -22,7 +22,7 @@
             <%--<input type="button" onclick="clearForm();" value="Create New User (clear form)" />--%>
             <br />
             <br />
-            <asp:Button runat="server" ID="cmdInsertNew" CausesValidation="false" OnClick="cmdInsertNew_Click" Text="Insert New" /></div>
+            <asp:Button runat="server" ID="cmdInsertNew" OnClick="cmdInsertNew_Click" Text="Insert New" /></div>
     </div>
     <br />
     <div id="divDatabaseRecord" class="divInput">
@@ -38,14 +38,40 @@
                 runat="server" 
                 ID="vldUniqueIDRegExpValidator" 
                 ControlToValidate="txtUniqueID" 
-                ErrorMessage="Required format: ###-##-####" Enabled="false"></asp:RegularExpressionValidator></div>
-        <div class="divInput"><label for="txtFirstName">First Name:</label><asp:TextBox CausesValidation="false" runat="server" ID="txtFirstName" ></asp:TextBox></div>
-        <div class="divInput"><label for="txtLastName">Last Name:</label><asp:TextBox runat="server" ID="txtLastName" ></asp:TextBox></div>
-        <div class="divInput"><label for="txtPhone">Phone:</label><asp:TextBox runat="server" ID="txtPhone" TextMode="Phone"></asp:TextBox></div>
+                ErrorMessage="Required format: ###-##-####" ValidationExpression="^\d{3}-\d{2}-\d{4}"></asp:RegularExpressionValidator></div>
+        <div class="divInput"><label for="txtFirstName">First Name:</label><asp:TextBox CausesValidation="false" runat="server" ID="txtFirstName" ></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" 
+                ID="vldFirstNameRqdFieldValidator" 
+                ControlToValidate="txtFirstName" 
+                ErrorMessage="First Name cannot be blank"></asp:RequiredFieldValidator>
+        </div>
+        <div class="divInput"><label for="txtLastName">Last Name:</label><asp:TextBox runat="server" ID="txtLastName" ></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" 
+                ID="vldLastNameRqdFieldValidator" 
+                ControlToValidate="txtLastName" 
+                ErrorMessage="Last Name cannot be blank"></asp:RequiredFieldValidator>
+        </div>
+        <div class="divInput"><label for="txtPhone">Phone:</label><asp:TextBox runat="server" ID="txtPhone" TextMode="Phone"></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" 
+                ID="vldPhoneRqdFieldValidator" 
+                ControlToValidate="txtPhone" 
+                ErrorMessage="Phone cannot be blank"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator 
+                runat="server" 
+                ID="vldPhoneRegExpValidator" 
+                ErrorMessage="Phone must be in this format {###-###-####}" 
+                ValidationExpression="^[1-9]\d{2}-\d{3}-\d{4}" 
+                ControlToValidate="txtPhone"></asp:RegularExpressionValidator>
+        </div>
         <div class="divInput"><label for="txtAddress">Address:</label><asp:TextBox runat="server" ID="txtAddress"></asp:TextBox></div>
         <div class="divInput"><label for="txtCity">City:</label><asp:TextBox runat="server" ID="txtCity" ></asp:TextBox></div>
-        <div class="divInput"><label for="txtState">State:</label><asp:TextBox runat="server" ID="txtState" ></asp:TextBox></div>
-        <div class="divInput"><label for="txtZipCode">Zip Code:</label><asp:TextBox runat="server" ID="txtZipCode"></asp:TextBox></div>
+        <div class="divInput"><label for="txtState">State:</label><asp:TextBox runat="server" ID="txtState" MaxLength="2"></asp:TextBox></div>
+        <div class="divInput"><label for="txtZipCode">Zip Code:</label><asp:TextBox runat="server" ID="txtZipCode" MaxLength="5"></asp:TextBox>
+            <asp:RegularExpressionValidator runat="server" 
+                ID="vldZipRegExpValidator" 
+                ErrorMessage="Zip must be in this format {#####}" 
+                ControlToValidate="txtZipCode" ValidationExpression="^\d{5}"></asp:RegularExpressionValidator>
+        </div>
         <div class="divInput"><label for="chkContract">Contract:</label><asp:CheckBox runat="server" ID="chkContract" Checked="true" /></div>
         <br />
         <br />
