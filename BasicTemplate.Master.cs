@@ -52,15 +52,14 @@ namespace BeginningASP.NET4._5
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            try
+            if ((h1Text != null) && (h1Text != ""))
             {
                 lblH1.Text = h1Text;
             }
-            catch (NullReferenceException ex)
+            else
             {
-                System.Diagnostics.Debug.Print(ex.Message);
+                lblH1.Text = "Beginning ASP.NET 4.5";
             }
-            
             if (prev == true)
             {
                 try
@@ -88,7 +87,7 @@ namespace BeginningASP.NET4._5
                 {
                     System.Diagnostics.Debug.Print(ex.Message);
                 }
-                
+
             }
         }
     }

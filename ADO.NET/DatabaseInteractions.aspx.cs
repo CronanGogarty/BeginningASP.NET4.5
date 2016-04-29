@@ -41,6 +41,7 @@ namespace BeginningASP.NET4._5.ADO.NET
             {
                 printExceptions(ex);
             }
+
             return (connection != null) ? true : false;
         }
 
@@ -98,23 +99,150 @@ namespace BeginningASP.NET4._5.ADO.NET
             if (errorRaised)
             {
                 lblError.Visible = true;
-                lblError.Text = errorMessage;
+                lblError.Text = "<br />" + errorMessage;
             }
-            else if ((result != "") && (result != null))
+            if ((result != "") && (result != null))
             {
                 lblResult.Visible = true;
-                lblResult.Text = result;
+                lblResult.Text = "<br />" + result;
             }
         }
 
         protected void cmdUpdate_Click(object sender, EventArgs e)
         {
+            if (Page.IsValid)
+            {
+                try
+                {
+                    if ((txtUniqueID.Text != "") && (txtFirstName.Text != "") && (txtLastName.Text != ""))
+                    {
 
+                        //example of using a Parameterized Command - set @CustomerID as the parameter
+                        commandText = "UPDATE dbo.authors SET ";
+                        commandText += "au_lname=@lname, au_fname=@fname, phone=@phone, address=@address, city=@city, state=@state, zip=@zip, contract=@contract WHERE au_id=@au_id_original";
+
+                        connectionOpened = openDatabase();
+
+                        //add the parameter and the value to the command.Parameters collection
+                        command.Parameters.AddWithValue("@lname", txtLastName.Text);
+                        command.Parameters.AddWithValue("@fname", txtFirstName.Text);
+                        command.Parameters.AddWithValue("@phone", txtPhone.Text);
+                        command.Parameters.AddWithValue("@address", txtAddress.Text);
+                        command.Parameters.AddWithValue("@city", txtCity.Text);
+                        command.Parameters.AddWithValue("@state", txtState.Text);
+                        command.Parameters.AddWithValue("@zip", txtZipCode.Text);
+                        command.Parameters.AddWithValue("@contract", chkContract.Checked);
+                        command.Parameters.AddWithValue("@au_id_original", selAuthorList.SelectedItem.Value);
+
+                        result = commandText;
+
+                        try
+                        {
+                            if (connectionOpened)
+                            {
+                                using (connection)
+                                {
+                                    int number = command.ExecuteNonQuery();
+                                    if (number > 0)
+                                    {
+                                        result = "Number of rows affected: " + number;
+                                    }
+                                }
+                            }
+                        }
+                        catch (SqlException ex)
+                        {
+                            printExceptions(ex);
+                        }
+                        catch (Exception ex)
+                        {
+                            printExceptions(ex);
+                        }
+                    }
+                    else
+                    {
+                        errorMessage = "Unique ID field cannot be blank";
+                        errorRaised = true;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    printExceptions(ex);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            else
+            {
+                errorMessage = "Page not valid";
+                errorRaised = true;
+            }
         }
 
         protected void cmdDelete_Click(object sender, EventArgs e)
         {
-            //commandText = "DELETE"
+            if (Page.IsValid)
+            {
+                try
+                {
+                    if ((txtUniqueID.Text != "") && (txtFirstName.Text != "") && (txtLastName.Text != ""))
+                    {
+                        
+                        //example of using a Parameterized Command - set @CustomerID as the parameter
+                        commandText = "DELETE FROM dbo.authors WHERE au_id = @CustomerID";
+                        connectionOpened = openDatabase();
+
+                        //add the parameter and the value to the command.Parameters collection
+                        command.Parameters.AddWithValue("@CustomerID", txtUniqueID.Text);
+                        result = commandText;
+
+                        try
+                        {
+                            if (connectionOpened)
+                            {
+                                using (connection)
+                                {
+                                    int number = command.ExecuteNonQuery();
+                                    if (number > 0)
+                                    {
+                                        result = "Number of rows affected: " + number;
+                                    }
+                                }
+                            }
+                        }
+                        catch (SqlException ex)
+                        {
+                            printExceptions(ex);
+                        }
+                        catch (Exception ex)
+                        {
+                            printExceptions(ex);
+                        }
+                    }
+                    else
+                    {
+                        errorMessage = "Unique ID field cannot be blank";
+                        errorRaised = true;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    printExceptions(ex);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            else
+            {
+                errorMessage = "Page not valid";
+                errorRaised = true;
+            }
         }
 
         protected void cmdCreateNew_Click(object sender, EventArgs e)

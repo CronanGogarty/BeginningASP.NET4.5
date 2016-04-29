@@ -16,12 +16,25 @@ h1 {
     outline:1px solid #fff;
     background-color:rgba(255, 255, 255, 0.7);
 }
-header > p {
+header > p,
+header ol {
     background-color:rgba(255, 255, 255, 0.7);
     padding:0 0.3em 0 0.3em;
     margin:0;
     margin-bottom:0.7em;
 }
+header ol {
+    padding:2em;
+    padding-left:4em;
+}
+
+header ol:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-2em;
+}
+
 #main   {
     background:rgba(233, 223, 34, 0.5);
     padding:2%;

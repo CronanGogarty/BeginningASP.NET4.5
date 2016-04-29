@@ -60,7 +60,7 @@
                 runat="server" 
                 ID="vldPhoneRegExpValidator" 
                 ErrorMessage="Phone must be in this format {###-###-####}" 
-                ValidationExpression="^[1-9]\d{2}-\d{3}-\d{4}" 
+                ValidationExpression="^[1-9]\d{2} \d{3}-\d{4}" 
                 ControlToValidate="txtPhone"></asp:RegularExpressionValidator>
         </div>
         <div class="divInput"><label for="txtAddress">Address:</label><asp:TextBox runat="server" ID="txtAddress"></asp:TextBox></div>

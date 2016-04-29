@@ -59,7 +59,9 @@
   <ItemGroup>
     <Content Include="ADO.NET\ConnectionStoredInWebConfig.aspx" />
     <Content Include="ADO.NET\DatabaseInteractions.aspx" />
+    <Content Include="ADO.NET\DisconnectedDataAccess.aspx" />
     <Content Include="ADO.NET\SimpleDirectQuery.aspx" />
+    <Content Include="ADO.NET\TableLinking.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
     <None Include="Web.Debug.config">
@@ -125,12 +127,26 @@
     <Compile Include="ADO.NET\DatabaseInteractions.aspx.designer.cs">
       <DependentUpon>DatabaseInteractions.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ADO.NET\DisconnectedDataAccess.aspx.cs">
+      <DependentUpon>DisconnectedDataAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\DisconnectedDataAccess.aspx.designer.cs">
+      <DependentUpon>DisconnectedDataAccess.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ADO.NET\SimpleDirectQuery.aspx.cs">
       <DependentUpon>SimpleDirectQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ADO.NET\SimpleDirectQuery.aspx.designer.cs">
       <DependentUpon>SimpleDirectQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADO.NET\TableLinking.aspx.cs">
+      <DependentUpon>TableLinking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO.NET\TableLinking.aspx.designer.cs">
+      <DependentUpon>TableLinking.aspx</DependentUpon>
     </Compile>
     <Compile Include="ADO.NET\UsingTheCommand.aspx.cs">
       <DependentUpon>UsingTheCommand.aspx</DependentUpon>

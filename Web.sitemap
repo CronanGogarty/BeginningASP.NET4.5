@@ -18,7 +18,9 @@
         <siteMapNode url="~/ADO.NET/ConnectionStoredInWebConfig.aspx" title="Web Config Connection" description="Use the ConnectionString variable set in Web.Config" />
         <siteMapNode url="~/ADO.NET/UsingTheCommand.aspx" title="Using SQLCommand Object" description="Use the SQLCommand object to execute a SQL query" />
         <siteMapNode url="~/ADO.NET/DatabaseInteractions.aspx" title="Database Interactions" description="Common database interactions such as Insert, Update, Delete" />
-        
+        <siteMapNode url="~/ADO.NET/DisconnectedDataAccess.aspx" title="Disconnected Data Access" description="Use the DataSet to access disconnected data" />
+        <siteMapNode url="~/ADO.NET/TableLinking.aspx" title="ADO.NET Table Linking" description="Linking tables using ADO.NET" />
+
 
       </siteMapNode>
     </siteMapNode>
