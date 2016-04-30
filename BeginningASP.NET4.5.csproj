@@ -70,6 +70,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="DataBinding\Single-ValueDataBinding.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
     <Content Include="Web.sitemap">
@@ -219,6 +220,13 @@
       <DependentUpon>CurrencyConverter.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomDivideByZeroException.cs" />
+    <Compile Include="DataBinding\Single-ValueDataBinding.aspx.cs">
+      <DependentUpon>Single-ValueDataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\Single-ValueDataBinding.aspx.designer.cs">
+      <DependentUpon>Single-ValueDataBinding.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
