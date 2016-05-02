@@ -19,6 +19,10 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,7 +74,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="DataBinding\ADO.NETDataBinding.aspx" />
+    <Content Include="DataBinding\DictionaryDatabind.aspx" />
+    <Content Include="DataBinding\Gridview.aspx" />
+    <Content Include="DataBinding\Repeated-ValueDataBinding.aspx" />
     <Content Include="DataBinding\Single-ValueDataBinding.aspx" />
+    <Content Include="DataBinding\SQLDataSource.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
     <Content Include="Web.sitemap">
@@ -220,12 +229,47 @@
       <DependentUpon>CurrencyConverter.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomDivideByZeroException.cs" />
+    <Compile Include="DataBinding\ADO.NETDataBinding.aspx.cs">
+      <DependentUpon>ADO.NETDataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\ADO.NETDataBinding.aspx.designer.cs">
+      <DependentUpon>ADO.NETDataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding\DictionaryDatabind.aspx.cs">
+      <DependentUpon>DictionaryDatabind.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\DictionaryDatabind.aspx.designer.cs">
+      <DependentUpon>DictionaryDatabind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding\Gridview.aspx.cs">
+      <DependentUpon>Gridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\Gridview.aspx.designer.cs">
+      <DependentUpon>Gridview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding\Repeated-ValueDataBinding.aspx.cs">
+      <DependentUpon>Repeated-ValueDataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\Repeated-ValueDataBinding.aspx.designer.cs">
+      <DependentUpon>Repeated-ValueDataBinding.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataBinding\Single-ValueDataBinding.aspx.cs">
       <DependentUpon>Single-ValueDataBinding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DataBinding\Single-ValueDataBinding.aspx.designer.cs">
       <DependentUpon>Single-ValueDataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding\SQLDataSource.aspx.cs">
+      <DependentUpon>SQLDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding\SQLDataSource.aspx.designer.cs">
+      <DependentUpon>SQLDataSource.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
