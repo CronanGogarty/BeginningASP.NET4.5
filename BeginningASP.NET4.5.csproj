@@ -80,6 +80,11 @@
     <Content Include="DataBinding\Repeated-ValueDataBinding.aspx" />
     <Content Include="DataBinding\Single-ValueDataBinding.aspx" />
     <Content Include="DataBinding\SQLDataSource.aspx" />
+    <Content Include="FilesAndStreams\Files\file4.txt" />
+    <Content Include="FilesAndStreams\Files\file3.txt" />
+    <Content Include="FilesAndStreams\Files\file2.txt" />
+    <Content Include="FilesAndStreams\Files\file1.txt" />
+    <Content Include="FilesAndStreams\ViewFiles.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
     <Content Include="Web.sitemap">
@@ -277,6 +282,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilesAndStreams\ViewFiles.aspx.cs">
+      <DependentUpon>ViewFiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilesAndStreams\ViewFiles.aspx.designer.cs">
+      <DependentUpon>ViewFiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="LinkClickEventArgs.cs" />
     <Compile Include="MappingAndRouting\ThisURLIsMapped.aspx.cs">

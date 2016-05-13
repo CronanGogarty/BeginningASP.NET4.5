@@ -29,6 +29,9 @@
         <siteMapNode url="DataBinding/SQLDataSource.aspx" title="SQL DataSource" description="SQL DataSource" />
         <siteMapNode url="DataBinding/Gridview.aspx" title="Gridview Databinding" description="Gridview Databinding" />
       </siteMapNode>
+      <siteMapNode title="Files and Streams" description="Examples of working with files, directories and streams in ASP.NET">
+        <siteMapNode title="View Files" url="FilesAndStreams/ViewFiles.aspx" description="View and manipulate files in a directory" />
+      </siteMapNode>
     </siteMapNode>
     
 </siteMap>
