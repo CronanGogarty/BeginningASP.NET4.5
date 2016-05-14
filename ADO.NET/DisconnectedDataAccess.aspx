@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="DisconnectedDataAccess.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.DisconnectedDataAccess" %>
+﻿<%@ Page Title="Disconnected Data Access" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="DisconnectedDataAccess.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.DisconnectedDataAccess" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <p>Now an example of using the DataSet class to access and manage data in a disconnected state.</p>

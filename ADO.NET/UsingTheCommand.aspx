@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="UsingTheCommand.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.UsingTheCommand" %>
+﻿<%@ Page Title="Command Object" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="UsingTheCommand.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.UsingTheCommand" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <p>Using the SQLCommand object to execute a query.

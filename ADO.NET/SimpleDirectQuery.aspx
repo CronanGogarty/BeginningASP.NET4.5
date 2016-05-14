@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="SimpleDirectQuery.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.SimpleDirectQuery" %>
+﻿<%@ Page Title="Direct SQL Query" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="SimpleDirectQuery.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.SimpleDirectQuery" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">

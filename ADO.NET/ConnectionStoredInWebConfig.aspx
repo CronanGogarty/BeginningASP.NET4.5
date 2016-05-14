@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="ConnectionStoredInWebConfig.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.ConnectionStoredInWebConfig" %>
+﻿<%@ Page Title="ConnectionString in Web.config" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="ConnectionStoredInWebConfig.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.ConnectionStoredInWebConfig" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="header" runat="server">
     <p>The ConnectionString property is set in Web.config.

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="SQLDataSource.aspx.cs" Inherits="BeginningASP.NET4._5.DataBinding.SQLDataSource" %>
+﻿<%@ Page Title="SQLDataSource" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="SQLDataSource.aspx.cs" Inherits="BeginningASP.NET4._5.DataBinding.SQLDataSource" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">

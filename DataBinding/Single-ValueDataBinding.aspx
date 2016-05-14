@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Single-ValueDataBinding.aspx.cs" Inherits="BeginningASP.NET4._5.DataBinding.Single_ValueDataBinding" %>
+﻿<%@ Page Title="Single-Value Databinding" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Single-ValueDataBinding.aspx.cs" Inherits="BeginningASP.NET4._5.DataBinding.Single_ValueDataBinding" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">

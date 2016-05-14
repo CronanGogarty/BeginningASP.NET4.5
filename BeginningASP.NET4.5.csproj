@@ -80,10 +80,12 @@
     <Content Include="DataBinding\Repeated-ValueDataBinding.aspx" />
     <Content Include="DataBinding\Single-ValueDataBinding.aspx" />
     <Content Include="DataBinding\SQLDataSource.aspx" />
+    <Content Include="FilesAndStreams\Files\Chequerboard.txt" />
     <Content Include="FilesAndStreams\Files\file4.txt" />
     <Content Include="FilesAndStreams\Files\file3.txt" />
     <Content Include="FilesAndStreams\Files\file2.txt" />
     <Content Include="FilesAndStreams\Files\file1.txt" />
+    <Content Include="FilesAndStreams\ReadWriteStreams.aspx" />
     <Content Include="FilesAndStreams\ViewFiles.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
@@ -282,6 +284,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilesAndStreams\ReadWriteStreams.aspx.cs">
+      <DependentUpon>ReadWriteStreams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilesAndStreams\ReadWriteStreams.aspx.designer.cs">
+      <DependentUpon>ReadWriteStreams.aspx</DependentUpon>
     </Compile>
     <Compile Include="FilesAndStreams\ViewFiles.aspx.cs">
       <DependentUpon>ViewFiles.aspx</DependentUpon>

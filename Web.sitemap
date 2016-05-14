@@ -31,6 +31,7 @@
       </siteMapNode>
       <siteMapNode title="Files and Streams" description="Examples of working with files, directories and streams in ASP.NET">
         <siteMapNode title="View Files" url="FilesAndStreams/ViewFiles.aspx" description="View and manipulate files in a directory" />
+        <siteMapNode title="Read Write Streams" url="FilesAndStreams/ReadWriteStreams.aspx" description="Read and Write with Streams" />
       </siteMapNode>
     </siteMapNode>
     

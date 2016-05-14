@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="TableLinking.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.TableLinking" %>
+﻿<%@ Page Title="Table Linking" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="TableLinking.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.TableLinking" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
