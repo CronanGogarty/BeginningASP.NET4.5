@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
+using System.Text;
 
 namespace BeginningASP.NET4._5.FilesAndStreams
 {
@@ -13,12 +14,11 @@ namespace BeginningASP.NET4._5.FilesAndStreams
         private string result, errorMessage, path, line = "";
         private bool errorRaised;
         StreamReader reader;
-        StreamWriter writer;
         FileStream fs;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            path = Path.Combine(Request.PhysicalApplicationPath, "FilesAndStreams/Files/Chequerboard.txt");
+            path = Path.Combine(Request.PhysicalApplicationPath, @"FilesAndStreams\Files\Chequerboard.txt");
             fs = File.Open(path, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
             reader = new StreamReader(fs);
             result = path.ToString();
@@ -36,8 +36,9 @@ namespace BeginningASP.NET4._5.FilesAndStreams
                             txtStreamReader.Text += "\n\n";
                         }
                     } while (line != null);
-                    
-                    
+
+                    fs.Flush();
+                    fs.Close();
                 }
                 catch (FileNotFoundException ex)
                 {
@@ -49,7 +50,7 @@ namespace BeginningASP.NET4._5.FilesAndStreams
                 }
                 finally
                 {
-                    fs.Close();
+                    //
                 }
             }
         }
@@ -74,26 +75,6 @@ namespace BeginningASP.NET4._5.FilesAndStreams
 
             errorMessage = ex.Message;
             errorRaised = true;
-        }
-
-        protected void cmdAppend_Click(object sender, EventArgs e)
-        {
-            if (txtStreamWriter.Text != "")
-            {
-
-                try
-                {
-                    //TODO: Add the logic to append to existing file.
-                }
-                catch (Exception ex)
-                {
-                    printExceptions(ex);
-                }
-                finally
-                {
-                    fs.Close();
-                }
-            }
         }
     }
 }

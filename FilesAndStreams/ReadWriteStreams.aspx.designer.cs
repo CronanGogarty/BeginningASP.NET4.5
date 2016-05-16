@@ -22,24 +22,6 @@ namespace BeginningASP.NET4._5.FilesAndStreams {
         protected global::System.Web.UI.WebControls.TextBox txtStreamReader;
         
         /// <summary>
-        /// txtStreamWriter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtStreamWriter;
-        
-        /// <summary>
-        /// cmdAppend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button cmdAppend;
-        
-        /// <summary>
         /// lblResult control.
         /// </summary>
         /// <remarks>
