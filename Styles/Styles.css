@@ -1,129 +1,155 @@
-﻿html    {
+﻿html {
     background-image: url(../Images/IMG_1640.JPG);
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:auto;
-    background-position:center,center;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center,center;
 }
-body    {
-    background:rgba(51, 204, 255, 0.4);
-    padding:3%;
+
+body {
+    background: rgba(51, 204, 255, 0.4);
+    padding: 3%;
 }
+
 header {
-    width:auto;
+    width: auto;
 }
+
 h1 {
-    outline:1px solid #fff;
-    background-color:rgba(255, 255, 255, 0.7);
+    outline: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.7);
 }
+
 header > p,
 header ol {
-    background-color:rgba(255, 255, 255, 0.7);
-    padding:0 0.3em 0 0.3em;
-    margin:0;
-    margin-bottom:0.7em;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 0.3em 0 0.3em;
+    margin: 0;
+    margin-bottom: 0.7em;
 }
+
 header ol {
-    padding:2em;
-    padding-left:4em;
+    padding: 2em;
+    padding-left: 4em;
 }
 
-header ol:before{
-    content:attr(aria-label);
-    font-size:120%;
-    font-weight:bold;
-    margin-left:-2em;
+    header ol:before {
+        content: attr(aria-label);
+        font-size: 120%;
+        font-weight: bold;
+        margin-left: -2em;
+    }
+
+#main {
+    background: rgba(233, 223, 34, 0.5);
+    padding: 2%;
+    overflow: auto;
 }
 
-#main   {
-    background:rgba(233, 223, 34, 0.5);
-    padding:2%;
-    overflow:auto;
-}
 #divSiteMapPath {
-    border:1px solid #000;
-    margin-bottom:1%;
-    background-color:rgba(255, 255, 255, 0.8);
-    padding:0.1em;
+    border: 1px solid #000;
+    margin-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.1em;
 }
+
 #mainSection {
-    clear:both;
-    padding-top:0.7em;
-    border-top:1px solid #000;
+    clear: both;
+    padding-top: 0.7em;
+    border-top: 1px solid #000;
 }
-#mainSection #contentHolder {
-    background-color:rgba(255, 255, 255, 0.7);
-    padding:1.3em;
-    margin:0;
-    overflow:auto;
-}
+
+    #mainSection #contentHolder {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 1.3em;
+        margin: 0;
+        overflow: auto;
+    }
+
 #mainLeft {
-    float:left;
-    width:72%;
-    box-sizing:border-box;
-    border-right:1px solid #000;
-    padding-right:2%
+    float: left;
+    width: 68%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 1px solid #000;
+    padding-right: 2%;
 }
+
 #mainRight {
-    width:26%;
-    float:right;
+    width: 30%;
+    float: right;
 }
+
 nav {
-    background:rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
+
 #Menu,
 .dynamic [role="menuitem"] {
-    background:rgb(255, 255, 200);
+    background: rgb(255, 255, 200);
 }
-#Menu a:hover {
-    color:#000;
-    text-decoration:underline;
+
+    #Menu a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+
+#ContentPlaceHolder1_pnlGreetingCard {
+    float: right;
+    width: 45%;
+    text-align: center;
 }
-#ContentPlaceHolder1_pnlGreetingCard    {
-    float:right;
-    width:45%;
-    text-align:center;
-}
-#ContentPlaceHolder1_pnlGreetingCard span {
-    display:block;
-}
+
+    #ContentPlaceHolder1_pnlGreetingCard span {
+        display: block;
+    }
+
 footer {
-    background:rgba(255,255,255,0.8);
-    text-align:center;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
 }
+
 footer,
 nav,
 #main {
-    outline:1px solid #000;
+    outline: 1px solid #000;
 }
-footer ul li {
-    list-style:none;
-    display:inline;
-}
-footer ul {
-    margin:0;
-    margin-top:1%;
-    padding:0.1em;
-}
-footer a {
-    text-decoration:none;
-}
-footer a:hover {
-    text-decoration:underline;
-}
+
+    footer ul li {
+        list-style: none;
+        display: inline;
+    }
+
+    footer ul {
+        margin: 0;
+        margin-top: 1%;
+        padding: 0.1em;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
 [id*="lnkPrevSibling"] {
-    float:left;
+    float: left;
 }
+
 [id*="lnkNextSibling"] {
-    float:right;
+    float: right;
 }
+
 .divInput {
     width: auto;
     padding: 1%;
     margin: 1%;
     background: rgba(233, 223, 34, 0.79);
     border: 1px solid rgb(183, 177, 56);
-    overflow:auto;
+    overflow: auto;
 }
 
     .divInput label {
@@ -134,8 +160,7 @@ footer a:hover {
     .divInput textarea,
     .divInput [id^="sel"],
     .divInput [id^="cmd"],
-    .divInput span[id^="val"]
-     {
+    .divInput span[id^="val"] {
         float: right;
     }
 
@@ -146,7 +171,10 @@ footer a:hover {
     margin-top: 20px;
     border: 1px solid #fff;
 }
+
+
+
 #__asptrace {
     /*div produced by ASP.NET when showing trace information */
-    background-color:#fff;
+    background-color: #fff;
 }

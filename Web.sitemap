@@ -5,14 +5,46 @@
       <siteMapNode url="~/CurrencyConverter.aspx" title="Currency Converter"  description="Currency Converter" />
       <siteMapNode url="~/SimpleGreetingCard.aspx" title="Simple Greeting Card" description="Simple Greeting Card" />
       <siteMapNode url="~/GreetingsCard.aspx" title="Greeting Card"  description="Greeting Card" />
+      
       <siteMapNode title="Exception Handling" description="Exception Handling Code">
         <siteMapNode title="Custom Exception Handlers" url="~/ExceptionHandling/CustomExceptionHandlers.aspx" />
         <siteMapNode title="Division Exception" url="~/ExceptionHandling/DivideAbyB.aspx" description="An example of handling a divide-by-zero exception" />
       </siteMapNode>
+      
+      <siteMapNode title="State Management" description="Examples of state management in ASP.NET">
+        <siteMapNode title="Simple ViewState Example" url="~/ViewState/SimpleViewStateExample.aspx" description="Storing primitive data types in ViewState" />
+        <siteMapNode title="Store Object in ViewState" url="~/ViewState/StoreObjectInViewState.aspx" description="Storing Objects in ViewState" />
+      </siteMapNode>
+
+      <siteMapNode title="Transferring Information Between Pages" description="Examples of how to transfer information between ASP.NET Web Forms pages">
+        <siteMapNode title="CrossPage Posting form input" url="~/CrossPagePosting/CrossPage1.aspx" description="Transferring data from one Web Forms page to another" />
+        <siteMapNode title="CrossPage Posting via the QueryString " url="~/CrossPagePosting/QueryStringSender.aspx" description="Transferring data via the QueryString" />
+      </siteMapNode>
+
+      <siteMapNode title="Session State" description="Storing and retrieving data from Session state">
+        <siteMapNode title="Create Product" url="~/SessionState/CreateProduct.aspx" description="Create an object, store in session state then retrieve from session state" />
+      </siteMapNode>
+
+      <siteMapNode title="Validation Controls" description="The ASP.NET Validation Controls">
+        <siteMapNode title="Simple Validation" url="~/ValidationControls/SimpleValidation.aspx" description="Simple Validation Examples" />
+        <siteMapNode title="Form Validation" url="~/ValidationControls/ValidationForm.aspx" description="Validating a form" />
+        <siteMapNode title="Validation Groups" url="~/ValidationControls/ValidationGroups.aspx" description="Validation groups" />
+      </siteMapNode>
+
+      <siteMapNode title="Rich Controls" description="Some of the built-in rich controls provided by ASP.NET">
+        <siteMapNode title="Date Control" url="~/RichControls/DateControl.aspx" description="The Date Control" />
+        <siteMapNode title="The Multiview Control" url="~/RichControls/MultiView.aspx" description="The Multiview Control" />
+      </siteMapNode>
+
+      <siteMapNode title="User Controls" description="How to create your own controls in ASP.NET">
+        <siteMapNode title="Consuming User Controls" url="~/UserControls/ConsumeControls.aspx" description="Consuming User Controls" />
+      </siteMapNode>
+      
       <siteMapNode title="Mapping and Routing" description="URL Mapping and URL Routing">
         <siteMapNode url="~/MappingAndRouting/MapThisURL.aspx" title="URL Mapping" description="URL Mapping Example" />
         <siteMapNode url="~/MappingAndRouting/product/product123" title="Routed URL" description="This URL has been rerouted in the Global.asax" />
       </siteMapNode>
+      
       <siteMapNode title="ADO.NET" description="ADO.NET and SQL">
         <siteMapNode url="~/ADO.NET/SimpleDirectQuery.aspx" title="Direct Connection" description="Connect to db directly in the page code, execute SQL query" />
         <siteMapNode url="~/ADO.NET/ConnectionStoredInWebConfig.aspx" title="Web Config Connection" description="Use the ConnectionString variable set in Web.Config" />
@@ -21,6 +53,7 @@
         <siteMapNode url="~/ADO.NET/DisconnectedDataAccess.aspx" title="Disconnected Data Access" description="Use the DataSet to access disconnected data" />
         <siteMapNode url="~/ADO.NET/TableLinking.aspx" title="ADO.NET Table Linking" description="Linking tables using ADO.NET" />
       </siteMapNode>
+      
       <siteMapNode title="DataBinding" description="Examples of Single-Value and Repeated-Value DataBinding in ASP.NET">
         <siteMapNode url="DataBinding/Single-ValueDataBinding.aspx" title="Single-Value DataBinding" description="Single-Value or Simple DataBinding" />
         <siteMapNode url="DataBinding/Repeated-ValueDataBinding.aspx" title="Repeated-Value DataBinding" description="Repeated-Value or List DataBinding" />
@@ -29,11 +62,15 @@
         <siteMapNode url="DataBinding/SQLDataSource.aspx" title="SQL DataSource" description="SQL DataSource" />
         <siteMapNode url="DataBinding/Gridview.aspx" title="Gridview Databinding" description="Gridview Databinding" />
       </siteMapNode>
+      
       <siteMapNode title="Files and Streams" description="Examples of working with files, directories and streams in ASP.NET">
         <siteMapNode title="View Files" url="FilesAndStreams/ViewFiles.aspx" description="View and manipulate files in a directory" />
         <siteMapNode title="Read Streams" url="FilesAndStreams/ReadWriteStreams.aspx" description="Read Streams" />
         <siteMapNode title="XML Writer" url="FilesAndStreams/XMLWriter.aspx" description="Write an XML file from ASP.NET" />
-
+      </siteMapNode>
+      
+      <siteMapNode title="Website Security" description="Website Security">
+        <siteMapNode title="Security Fundamentals" url="Security/Fundamentals.aspx" description="Security Fundamentals" />
       </siteMapNode>
     </siteMapNode>
     

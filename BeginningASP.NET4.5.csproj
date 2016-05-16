@@ -68,6 +68,7 @@
     <Content Include="ADO.NET\TableLinking.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
+    <Content Include="Security\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,8 +89,10 @@
     <Content Include="FilesAndStreams\ReadWriteStreams.aspx" />
     <Content Include="FilesAndStreams\ViewFiles.aspx" />
     <Content Include="FilesAndStreams\XMLWriter.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
+    <Content Include="Security\Fundamentals.aspx" />
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
@@ -308,6 +311,13 @@
       <DependentUpon>XMLWriter.aspx</DependentUpon>
     </Compile>
     <Compile Include="LinkClickEventArgs.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MappingAndRouting\ThisURLIsMapped.aspx.cs">
       <DependentUpon>ThisURLIsMapped.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -375,6 +385,13 @@
     </Compile>
     <Compile Include="RichControls\MultiView.aspx.designer.cs">
       <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Fundamentals.aspx.cs">
+      <DependentUpon>Fundamentals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\Fundamentals.aspx.designer.cs">
+      <DependentUpon>Fundamentals.aspx</DependentUpon>
     </Compile>
     <Compile Include="SessionState\CreateProduct.aspx.cs">
       <DependentUpon>CreateProduct.aspx</DependentUpon>
