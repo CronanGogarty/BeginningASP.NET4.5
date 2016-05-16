@@ -87,6 +87,7 @@
     <Content Include="FilesAndStreams\Files\file1.txt" />
     <Content Include="FilesAndStreams\ReadWriteStreams.aspx" />
     <Content Include="FilesAndStreams\ViewFiles.aspx" />
+    <Content Include="FilesAndStreams\XMLWriter.aspx" />
     <Content Include="MappingAndRouting\ThisURLIsMapped.aspx" />
     <Content Include="MappingAndRouting\productInfo.aspx" />
     <Content Include="Web.sitemap">
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="FilesAndStreams\ViewFiles.aspx.designer.cs">
       <DependentUpon>ViewFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilesAndStreams\XMLWriter.aspx.cs">
+      <DependentUpon>XMLWriter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilesAndStreams\XMLWriter.aspx.designer.cs">
+      <DependentUpon>XMLWriter.aspx</DependentUpon>
     </Compile>
     <Compile Include="LinkClickEventArgs.cs" />
     <Compile Include="MappingAndRouting\ThisURLIsMapped.aspx.cs">
