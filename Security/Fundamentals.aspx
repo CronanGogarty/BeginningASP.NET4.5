@@ -8,4 +8,6 @@
     <asp:Label runat="server" ID="lblResult"></asp:Label>
     <br />
     <asp:Label runat="server" ID="lblErrorMessage"></asp:Label>
+    <br />
+    <asp:Button runat="server" ID="cmdLogout" Text="Logout" OnClick="cmdLogout_Click" />
 </asp:Content>

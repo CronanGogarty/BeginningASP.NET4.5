@@ -68,6 +68,9 @@
     <Content Include="ADO.NET\TableLinking.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
+    <Content Include="Caching\DataSetCaching.aspx" />
+    <Content Include="Caching\OutputCaching.aspx" />
+    <Content Include="Caching\SimpleDataCache.aspx" />
     <Content Include="Security\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -182,6 +185,27 @@
     </Compile>
     <Compile Include="BasicTemplate.Master.designer.cs">
       <DependentUpon>BasicTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\DataSetCaching.aspx.cs">
+      <DependentUpon>DataSetCaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching\DataSetCaching.aspx.designer.cs">
+      <DependentUpon>DataSetCaching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\OutputCaching.aspx.cs">
+      <DependentUpon>OutputCaching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching\OutputCaching.aspx.designer.cs">
+      <DependentUpon>OutputCaching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\SimpleDataCache.aspx.cs">
+      <DependentUpon>SimpleDataCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching\SimpleDataCache.aspx.designer.cs">
+      <DependentUpon>SimpleDataCache.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>

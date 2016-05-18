@@ -55,22 +55,30 @@
       </siteMapNode>
       
       <siteMapNode title="DataBinding" description="Examples of Single-Value and Repeated-Value DataBinding in ASP.NET">
-        <siteMapNode url="DataBinding/Single-ValueDataBinding.aspx" title="Single-Value DataBinding" description="Single-Value or Simple DataBinding" />
-        <siteMapNode url="DataBinding/Repeated-ValueDataBinding.aspx" title="Repeated-Value DataBinding" description="Repeated-Value or List DataBinding" />
-        <siteMapNode url="DataBinding/DictionaryDataBind.aspx" title="Dictionary DataBinding" description="Databind a dictionary object to a control" />
-        <siteMapNode url="DataBinding/ADO.NETDataBinding.aspx" title="ADO.NET DataSet DataBinding" description="ADO.NET DataSet DataBinding" />
-        <siteMapNode url="DataBinding/SQLDataSource.aspx" title="SQL DataSource" description="SQL DataSource" />
-        <siteMapNode url="DataBinding/Gridview.aspx" title="Gridview Databinding" description="Gridview Databinding" />
+        <siteMapNode url="~/DataBinding/Single-ValueDataBinding.aspx" title="Single-Value DataBinding" description="Single-Value or Simple DataBinding" />
+        <siteMapNode url="~/DataBinding/Repeated-ValueDataBinding.aspx" title="Repeated-Value DataBinding" description="Repeated-Value or List DataBinding" />
+        <siteMapNode url="~/DataBinding/DictionaryDataBind.aspx" title="Dictionary DataBinding" description="Databind a dictionary object to a control" />
+        <siteMapNode url="~/DataBinding/ADO.NETDataBinding.aspx" title="ADO.NET DataSet DataBinding" description="ADO.NET DataSet DataBinding" />
+        <siteMapNode url="~/DataBinding/SQLDataSource.aspx" title="SQL DataSource" description="SQL DataSource" />
+        <siteMapNode url="~/DataBinding/Gridview.aspx" title="Gridview Databinding" description="Gridview Databinding" />
       </siteMapNode>
       
       <siteMapNode title="Files and Streams" description="Examples of working with files, directories and streams in ASP.NET">
-        <siteMapNode title="View Files" url="FilesAndStreams/ViewFiles.aspx" description="View and manipulate files in a directory" />
-        <siteMapNode title="Read Streams" url="FilesAndStreams/ReadWriteStreams.aspx" description="Read Streams" />
-        <siteMapNode title="XML Writer" url="FilesAndStreams/XMLWriter.aspx" description="Write an XML file from ASP.NET" />
+        <siteMapNode title="View Files" url="~/FilesAndStreams/ViewFiles.aspx" description="View and manipulate files in a directory" />
+        <siteMapNode title="Read Streams" url="~/FilesAndStreams/ReadWriteStreams.aspx" description="Read Streams" />
+        <siteMapNode title="XML Writer" url="~/FilesAndStreams/XMLWriter.aspx" description="Write an XML file from ASP.NET" />
       </siteMapNode>
       
       <siteMapNode title="Website Security" description="Website Security">
-        <siteMapNode title="Security Fundamentals" url="Security/Fundamentals.aspx" description="Security Fundamentals" />
+        <siteMapNode title="Security Fundamentals" url="~/Security/Fundamentals.aspx" description="Security Fundamentals" />
+      </siteMapNode>
+
+      <siteMapNode title="Caching" description="Using ASP.NET caching ">
+        <siteMapNode title="Output Caching" url="~/Caching/OutputCaching.aspx" description="Basic Output Caching" />
+        <siteMapNode title="Simple Data Caching" url="~/Caching/SimpleDataCache.aspx" description="Simple Data Caching" />
+        <siteMapNode title="DataSet Caching" url="~/Caching/DataSetCaching.aspx" description="DataSet Caching" />
+        <!--<siteMapNode title="" url="" description="" />
+        <siteMapNode title="" url="" description="" />-->
       </siteMapNode>
     </siteMapNode>
     

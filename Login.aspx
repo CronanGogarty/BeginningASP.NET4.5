@@ -7,6 +7,9 @@
             float:right;
             margin-right:0.1em;
         }
+        #ContentPlaceHolder1_chkPersistentLogin {
+            float:none;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
@@ -18,10 +21,11 @@
         <asp:RequiredFieldValidator runat="server" ID="valUsernameRqdFieldValidator" ControlToValidate="txtUserName" Text="Username cannot be empty"></asp:RequiredFieldValidator>
     </div>
     <div class="divInput">
-        <label for="txtPassword">Password:</label>&nbsp;<asp:TextBox runat="server" ID="txtPassword"></asp:TextBox>
+        <label for="txtPassword">Password:</label>&nbsp;<asp:TextBox runat="server" ID="txtPassword" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator runat="server" ID="valPasswordRqdFieldValidator" ControlToValidate="txtPassword" ErrorMessage="Password cannot be empty "></asp:RequiredFieldValidator>
     </div>
     <div class="divInput">
+        <label for="chkPersistentLogin">Keep me logged in:</label>&nbsp;<asp:CheckBox runat="server" ID="chkPersistentLogin" />&nbsp;
         <asp:Button runat="server" ID="cmdSubmit" Text="Login" OnClick="cmdSubmit_Click" CausesValidation="true" />
     </div>
     <br />
