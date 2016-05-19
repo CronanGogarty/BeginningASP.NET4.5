@@ -80,6 +80,13 @@
         <siteMapNode title="Cache Dependencies" url="~/Caching/CacheDependencies.aspx" description="Cache dependencies ensure you avoid using out-of-date information from the cache" />
         <!--<siteMapNode title="" url="" description="" />-->
       </siteMapNode>
+
+      <siteMapNode title="LINQ" description="Linq and the Entity Framework">
+        <siteMapNode title="LINQ to Objects" url="~/Linq/Employees.aspx" description="Use LINQ to Objects to query in-memory objects" />
+        <!--<siteMapNode title="" url="" description="" />-->
+        <!--<siteMapNode title="" url="" description="" />-->
+        <!--<siteMapNode title="" url="" description="" />-->
+      </siteMapNode>
     </siteMapNode>
     
 </siteMap>

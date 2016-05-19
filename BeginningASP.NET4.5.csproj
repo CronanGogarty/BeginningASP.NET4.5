@@ -73,6 +73,7 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="Linq\Employees.aspx" />
     <Content Include="Security\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -344,6 +345,14 @@
       <DependentUpon>XMLWriter.aspx</DependentUpon>
     </Compile>
     <Compile Include="LinkClickEventArgs.cs" />
+    <Compile Include="Linq\Employee.cs" />
+    <Compile Include="Linq\Employees.aspx.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Linq\Employees.aspx.designer.cs">
+      <DependentUpon>Employees.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
