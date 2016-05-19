@@ -68,8 +68,10 @@
     <Content Include="ADO.NET\TableLinking.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
     <Content Include="BasicTemplate.Master" />
+    <Content Include="Caching\CacheDependencies.aspx" />
     <Content Include="Caching\DataSetCaching.aspx" />
     <Content Include="Caching\OutputCaching.aspx" />
+    <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
     <Content Include="Security\Web.config" />
     <None Include="Web.Debug.config">
@@ -185,6 +187,13 @@
     </Compile>
     <Compile Include="BasicTemplate.Master.designer.cs">
       <DependentUpon>BasicTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Caching\CacheDependencies.aspx.cs">
+      <DependentUpon>CacheDependencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Caching\CacheDependencies.aspx.designer.cs">
+      <DependentUpon>CacheDependencies.aspx</DependentUpon>
     </Compile>
     <Compile Include="Caching\DataSetCaching.aspx.cs">
       <DependentUpon>DataSetCaching.aspx</DependentUpon>

@@ -77,8 +77,8 @@
         <siteMapNode title="Output Caching" url="~/Caching/OutputCaching.aspx" description="Basic Output Caching" />
         <siteMapNode title="Simple Data Caching" url="~/Caching/SimpleDataCache.aspx" description="Simple Data Caching" />
         <siteMapNode title="DataSet Caching" url="~/Caching/DataSetCaching.aspx" description="DataSet Caching" />
-        <!--<siteMapNode title="" url="" description="" />
-        <siteMapNode title="" url="" description="" />-->
+        <siteMapNode title="Cache Dependencies" url="~/Caching/CacheDependencies.aspx" description="Cache dependencies ensure you avoid using out-of-date information from the cache" />
+        <!--<siteMapNode title="" url="" description="" />-->
       </siteMapNode>
     </siteMapNode>
     

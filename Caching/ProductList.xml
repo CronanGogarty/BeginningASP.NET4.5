@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<productListing title="ABC Products">
+  <product>
+    <name>Product One</name>
+    <description>
+      Product One is an exciting new widget that will
+      simplify your life.
+    </description>
+    <cost>27.91</cost>
+    <shipping>2.95</shipping>
+  </product>
+  <product>
+    <name>Product Two</name>
+    <description>
+      Product two is an exciting new APP that will
+      simplify your life.
+    </description>
+    <cost>10.95</cost>
+    <shipping>0.00</shipping>
+  </product>
+  <product>
+    <name>Product Three</name>
+    <description>
+      Product One is a football.
+    </description>
+    <cost>38.51</cost>
+    <shipping>9.95</shipping>
+  </product>
+  <product>
+    <name>Product Four</name>
+    <description>
+      Product Four is a stack of old CDs.
+    </description>
+    <cost>20.95</cost>
+    <shipping>5.22</shipping>
+  </product>
+</productListing>
