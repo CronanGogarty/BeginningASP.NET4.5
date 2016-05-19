@@ -87,6 +87,12 @@
         <!--<siteMapNode title="" url="" description="" />-->
         <!--<siteMapNode title="" url="" description="" />-->
       </siteMapNode>
+
+      <siteMapNode title="The Entity Framework" description="Accessing databases using the Entity Framework">
+        <siteMapNode title="Retrieve Data" url="~/EntityFramework/RetrieveData.aspx" description="Retrieve data using Entity Framework" />
+        <siteMapNode title="Relationships" url="~/EntityFramework/Relationships.aspx" description="Entity Framework Relationships" />
+
+      </siteMapNode>
     </siteMapNode>
     
 </siteMap>

@@ -42,7 +42,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -73,8 +81,28 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="EntityFramework\Relationships.aspx" />
+    <Content Include="EntityFramework\RetrieveData.aspx" />
     <Content Include="Linq\Employees.aspx" />
+    <Content Include="Northwind.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Northwind.edmx</DependentUpon>
+      <LastGenOutput>Northwind.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Northwind.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Northwind.edmx</DependentUpon>
+      <LastGenOutput>Northwind.cs</LastGenOutput>
+    </Content>
     <Content Include="Security\Web.config" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="Northwind.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Northwind.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Northwind.edmx.diagram">
+      <DependentUpon>Northwind.edmx</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -217,6 +245,9 @@
     <Compile Include="Caching\SimpleDataCache.aspx.designer.cs">
       <DependentUpon>SimpleDataCache.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -274,6 +305,21 @@
       <DependentUpon>CurrencyConverter.aspx</DependentUpon>
     </Compile>
     <Compile Include="CustomDivideByZeroException.cs" />
+    <Compile Include="Customer.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDemographic.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustOrderHist_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustOrdersDetail_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustOrdersOrders_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataBinding\ADO.NETDataBinding.aspx.cs">
       <DependentUpon>ADO.NETDataBinding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -322,6 +368,26 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Sales_by_Country_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFramework\Relationships.aspx.cs">
+      <DependentUpon>Relationships.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityFramework\Relationships.aspx.designer.cs">
+      <DependentUpon>Relationships.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFramework\RetrieveData.aspx.cs">
+      <DependentUpon>RetrieveData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityFramework\RetrieveData.aspx.designer.cs">
+      <DependentUpon>RetrieveData.aspx</DependentUpon>
     </Compile>
     <Compile Include="FilesAndStreams\ReadWriteStreams.aspx.cs">
       <DependentUpon>ReadWriteStreams.aspx</DependentUpon>
@@ -381,6 +447,27 @@
     <Compile Include="MappingAndRouting\productInfo.aspx.designer.cs">
       <DependentUpon>productInfo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Northwind.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Northwind.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Northwind.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Detail.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="ProductTest.aspx.cs">
       <DependentUpon>ProductTest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -412,8 +499,13 @@
     <Compile Include="GreetingsCard.aspx.designer.cs">
       <DependentUpon>GreetingsCard.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product.cs" />
+    <Compile Include="Product.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Region.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="RichControls\DateControl.aspx.cs">
       <DependentUpon>DateControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -427,6 +519,12 @@
     </Compile>
     <Compile Include="RichControls\MultiView.aspx.designer.cs">
       <DependentUpon>MultiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesByCategory_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_by_Year_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
     <Compile Include="Security\Fundamentals.aspx.cs">
       <DependentUpon>Fundamentals.aspx</DependentUpon>
@@ -443,6 +541,9 @@
       <DependentUpon>CreateProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="SessionState\Product.cs" />
+    <Compile Include="Shipper.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
     <Compile Include="SimpleGreetingCard.aspx.cs">
       <DependentUpon>SimpleGreetingCard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -463,6 +564,15 @@
     </Compile>
     <Compile Include="Controls\Header.ascx.designer.cs">
       <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ten_Most_Expensive_Products_Result.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Territory.cs">
+      <DependentUpon>Northwind.tt</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ConsumeControls.aspx.cs">
       <DependentUpon>ConsumeControls.aspx</DependentUpon>
@@ -517,7 +627,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
