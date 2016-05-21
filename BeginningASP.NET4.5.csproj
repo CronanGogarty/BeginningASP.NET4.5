@@ -81,6 +81,7 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="EntityFramework\LINQToEntities.aspx" />
     <Content Include="EntityFramework\Relationships.aspx" />
     <Content Include="EntityFramework\RetrieveData.aspx" />
     <Content Include="Linq\Employees.aspx" />
@@ -374,6 +375,13 @@
     </Compile>
     <Compile Include="Employee_Sales_by_Country_Result.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFramework\LINQToEntities.aspx.cs">
+      <DependentUpon>LINQToEntities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityFramework\LINQToEntities.aspx.designer.cs">
+      <DependentUpon>LINQToEntities.aspx</DependentUpon>
     </Compile>
     <Compile Include="EntityFramework\Relationships.aspx.cs">
       <DependentUpon>Relationships.aspx</DependentUpon>
