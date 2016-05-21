@@ -84,6 +84,7 @@ namespace BeginningASP.NET4._5.EntityFramework
         protected void cmdHideGrid_Click(object sender, EventArgs e)
         {
             gridView1.Visible = false;
+            cmdHideGrid.Visible = false;
         }
     }
 }
