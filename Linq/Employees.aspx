@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="BeginningASP.NET4._5.Linq.Employees" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <h2>Create a collection of employee objects</h2>
+    <%--<h2>Create a collection of employee objects</h2>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Button runat="server" ID="cmdGetMatches" Text="Return all users with 'Mr' as the title" OnClick="cmdGetMatches_Click" />

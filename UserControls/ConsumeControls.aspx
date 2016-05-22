@@ -19,7 +19,7 @@
     <br />
     <asp:Label ID="lblClick" runat="server" Text="Click a link above"></asp:Label>
     <div>
-        <h2>Consuming a User Control</h2>
+        <%--<h2>Consuming a User Control</h2>--%>
         <p>Below is a User Control that is registered through Web.config - the control simply takes today's date and adds 90 days.</p>
         <cronan:NinetyDays runat="server" id="ascx90days"></cronan:NinetyDays>
         <p>

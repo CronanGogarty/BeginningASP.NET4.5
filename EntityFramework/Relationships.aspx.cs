@@ -30,7 +30,12 @@ namespace BeginningASP.NET4._5.EntityDataModels
 
         private void GetCustomerOrders()
         {
-            foreach (Customer customer in entities.Customers)
+            //using the foreach loop below would use lazy-loading and cause LINQ to query the database in the 2nd foreach loop
+            //foreach (Customer customer in entities.Customers)
+
+            //instead it is possible to preload the Orders data by using the Include() method and specifying the table with the related data
+
+            foreach (Customer customer in entities.Customers.Include("Orders"))
             {
                 sb.Append("<strong>");
                 sb.Append(customer.ContactName);

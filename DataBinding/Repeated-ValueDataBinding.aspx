@@ -5,7 +5,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <article title="Repeated-Value DataBinding" id="artRptValDatabind">
         <section>
-            <h2>Repeated-Value DataBinding</h2>
+            <%--<h2>Repeated-Value DataBinding</h2>--%>
             <h3>Some controls databound to a strongly-typed List object</h3>
             <p>
                 <asp:DropDownList runat="server" ID="selFruit"></asp:DropDownList> 

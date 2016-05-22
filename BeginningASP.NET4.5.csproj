@@ -84,6 +84,7 @@
     <Content Include="EntityFramework\LINQToEntities.aspx" />
     <Content Include="EntityFramework\Relationships.aspx" />
     <Content Include="EntityFramework\RetrieveData.aspx" />
+    <Content Include="EntityFramework\UpdateInsertDelete.aspx" />
     <Content Include="Linq\Employees.aspx" />
     <Content Include="Northwind.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -396,6 +397,13 @@
     </Compile>
     <Compile Include="EntityFramework\RetrieveData.aspx.designer.cs">
       <DependentUpon>RetrieveData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityFramework\UpdateInsertDelete.aspx.cs">
+      <DependentUpon>UpdateInsertDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EntityFramework\UpdateInsertDelete.aspx.designer.cs">
+      <DependentUpon>UpdateInsertDelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="FilesAndStreams\ReadWriteStreams.aspx.cs">
       <DependentUpon>ReadWriteStreams.aspx</DependentUpon>

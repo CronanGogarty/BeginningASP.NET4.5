@@ -92,6 +92,7 @@
         <siteMapNode title="Retrieve Data" url="~/EntityFramework/RetrieveData.aspx" description="Retrieve data using Entity Framework" />
         <siteMapNode title="Relationships" url="~/EntityFramework/Relationships.aspx" description="Entity Framework Relationships" />
         <siteMapNode title="LINQ To Entities" url="~/EntityFramework/LINQToEntities.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
+        <siteMapNode title="Update, Insert, Delete with EF" url="~/EntityFramework/UpdateInsertDelete.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
 
       </siteMapNode>
     </siteMapNode>
