@@ -28,7 +28,7 @@ namespace BeginningASP.NET4._5
         protected void Application_EndRequest(object sender, EventArgs e)
         {
             //Response.Write("<footer><hr />This page was served at " + DateTime.Now.ToString() + "</footer>");
-            Response.Write("<!-- This page was served at " + DateTime.Now.ToString() + " //-->");
+            //Response.Write("<!-- This page was served at " + DateTime.Now.ToString() + " //-->");
         }
 
         protected void Session_Start(object sender, EventArgs e)

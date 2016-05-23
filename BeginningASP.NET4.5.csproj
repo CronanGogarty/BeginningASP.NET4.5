@@ -80,6 +80,9 @@
     <Content Include="ADO.NET\SimpleDirectQuery.aspx" />
     <Content Include="ADO.NET\TableLinking.aspx" />
     <Content Include="ADO.NET\UsingTheCommand.aspx" />
+    <Content Include="Ajax\BasicAjaxExample.aspx" />
+    <Content Include="Ajax\AjaxGreetingsCard.aspx" />
+    <Content Include="Ajax\UpdateProgress.aspx" />
     <Content Include="BasicTemplate.Master" />
     <Content Include="Caching\CacheDependencies.aspx" />
     <Content Include="Caching\DataSetCaching.aspx" />
@@ -91,6 +94,8 @@
     <Content Include="EntityFramework\Relationships.aspx" />
     <Content Include="EntityFramework\RetrieveData.aspx" />
     <Content Include="EntityFramework\UpdateInsertDelete.aspx" />
+    <Content Include="Images\giphy.gif" />
+    <Content Include="Images\progress-bar.gif" />
     <Content Include="Linq\Employees.aspx" />
     <Content Include="Northwind.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -217,6 +222,27 @@
     </Compile>
     <Compile Include="ADO.NET\UsingTheCommand.aspx.designer.cs">
       <DependentUpon>UsingTheCommand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\BasicAjaxExample.aspx.cs">
+      <DependentUpon>BasicAjaxExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\BasicAjaxExample.aspx.designer.cs">
+      <DependentUpon>BasicAjaxExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\AjaxGreetingsCard.aspx.cs">
+      <DependentUpon>AjaxGreetingsCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\AjaxGreetingsCard.aspx.designer.cs">
+      <DependentUpon>AjaxGreetingsCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\UpdateProgress.aspx.cs">
+      <DependentUpon>UpdateProgress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ajax\UpdateProgress.aspx.designer.cs">
+      <DependentUpon>UpdateProgress.aspx</DependentUpon>
     </Compile>
     <Compile Include="BasicTemplate.Master.cs">
       <DependentUpon>BasicTemplate.Master</DependentUpon>

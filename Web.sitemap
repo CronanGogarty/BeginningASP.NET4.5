@@ -96,6 +96,14 @@
         <siteMapNode title="EntityDataSource" url="~/EntityFramework/EntityDataSource.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
 
       </siteMapNode>
+
+      <siteMapNode title="Ajax" description="ASP.NET Ajax">
+        <siteMapNode title="Basic Ajax Example" url="~/Ajax/BasicAjaxExample.aspx" description="Update an element in the page via Ajax" />
+        <siteMapNode title="Ajax Greeting Card Maker" url="~/Ajax/AjaxGreetingsCard.aspx" description="Rework the greetings card maker to use Ajax" />
+        <siteMapNode title="Ajax Progress Bar" url="~/Ajax/UpdateProgress.aspx" description="Display a progress bar using ASP.NET UpdateProgress control" />
+
+
+      </siteMapNode>
     </siteMapNode>
     
 </siteMap>
