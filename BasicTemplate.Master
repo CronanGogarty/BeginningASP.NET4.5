@@ -13,10 +13,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <noscript>
+            <style>
+                div#Menu {display:none;}
+            </style>
+        </noscript>
         <asp:SiteMapDataSource runat="server" ID="SiteMapDataSource" />
         <asp:Menu runat="server" ID="Menu" DataSourceID="SiteMapDataSource">
         </asp:Menu>
-
+        
         <div id="main">
             <div id="divSiteMapPath">
                 You are here:

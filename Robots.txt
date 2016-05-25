@@ -1,0 +1,3 @@
+﻿User-Agent: *
+Disallow: /
+Disallow: /BeginningASP.NET4.5

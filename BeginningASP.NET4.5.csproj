@@ -107,6 +107,7 @@
       <DependentUpon>Northwind.edmx</DependentUpon>
       <LastGenOutput>Northwind.cs</LastGenOutput>
     </Content>
+    <Content Include="Robots.txt" />
     <Content Include="Security\Web.config" />
     <Content Include="packages.config" />
     <EntityDeploy Include="Northwind.edmx">
@@ -116,12 +117,8 @@
     <Content Include="Northwind.edmx.diagram">
       <DependentUpon>Northwind.edmx</DependentUpon>
     </Content>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <None Include="Properties\PublishProfiles\1934e35b-0ee0-4-231-b9ee - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\1934e35b-0ee0-4-231-b9ee - Web Deploy.pubxml" />
     <Content Include="DataBinding\ADO.NETDataBinding.aspx" />
     <Content Include="DataBinding\DictionaryDatabind.aspx" />
     <Content Include="DataBinding\Gridview.aspx" />
@@ -143,6 +140,16 @@
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\Footer.ascx" />
@@ -175,9 +182,6 @@
     <Content Include="ValidationControls\ValidationGroups.aspx" />
     <Content Include="ViewState\SimpleViewStateExample.aspx" />
     <Content Include="ViewState\StoreObjectInViewState.aspx" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="WebFormPageLifecycle.aspx" />
   </ItemGroup>
   <ItemGroup>
