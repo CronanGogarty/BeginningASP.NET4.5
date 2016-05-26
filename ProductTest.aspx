@@ -11,7 +11,7 @@
     <script runat="server">
     private void Page_Load(object sender, EventArgs e)
     {
-        Product saleProduct = new Product("Kitchen Garbage", 49.99M, "Images/garbage.jpg");
+        BeginningASP.NET4._5.Product saleProduct = new BeginningASP.NET4._5.Product("Kitchen Garbage", 49.99M, "Images/garbage.jpg");
         Response.Write(saleProduct.GetHtml());
     }
 </script>
