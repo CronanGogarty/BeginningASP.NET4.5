@@ -31,10 +31,10 @@
         <siteMapNode title="Validation Groups" url="~/ValidationControls/ValidationGroups.aspx" description="Validation groups" />
       </siteMapNode>
 
-      <siteMapNode title="Rich Controls" description="Some of the built-in rich controls provided by ASP.NET">
+      <!--<siteMapNode title="Rich Controls" description="Some of the built-in rich controls provided by ASP.NET">
         <siteMapNode title="Date Control" url="~/RichControls/DateControl.aspx" description="The Date Control" />
         <siteMapNode title="The Multiview Control" url="~/RichControls/MultiView.aspx" description="The Multiview Control" />
-      </siteMapNode>
+      </siteMapNode>-->
 
       <siteMapNode title="User Controls" description="How to create your own controls in ASP.NET">
         <siteMapNode title="Consuming User Controls" url="~/UserControls/ConsumeControls.aspx" description="Consuming User Controls" />
@@ -93,7 +93,7 @@
         <siteMapNode title="Relationships" url="~/EntityFramework/Relationships.aspx" description="Entity Framework Relationships" />
         <siteMapNode title="LINQ To Entities" url="~/EntityFramework/LINQToEntities.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
         <siteMapNode title="Update, Insert, Delete with EF" url="~/EntityFramework/UpdateInsertDelete.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
-        <siteMapNode title="EntityDataSource" url="~/EntityFramework/EntityDataSource.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
+        <siteMapNode title="Using the EntityDataSource" url="~/EntityFramework/EntityDataSource.aspx" description="Using LINQ to Entities, you can write queries that act on your database" />
 
       </siteMapNode>
 

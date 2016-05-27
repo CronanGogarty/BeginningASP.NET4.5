@@ -1,19 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConsumeControls.aspx.cs" Inherits="BeginningASP.NET4._5.UserControls.ConsumeControls" %>
-<%@ Register TagPrefix="cronan" TagName="Header" Src="~/Controls/Header.ascx"  %>
+﻿<%@ Page Title="Consuming User Controls" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="ConsumeControls.aspx.cs" Inherits="BeginningASP.NET4._5.UserControls.ConsumeControls" %>
 
-<!DOCTYPE html>
+<%@ Register TagPrefix="cronan" TagName="Header" Src="~/Controls/Header.ascx" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Consuming User Controls</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .footer {
-            outline:1px solid rgba(255, 0, 0, 0.7);
+            outline: 1px solid rgba(255, 0, 0, 0.7);
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <cronan:Header runat="server" ID="ascxHeader" />
     <cronan:LinkMenu runat="server" ID="ascxLinkMenu" OnLinkClicked="LinkClicked"></cronan:LinkMenu>
     <br />
@@ -21,7 +18,7 @@
     <div>
         <%--<h2>Consuming a User Control</h2>--%>
         <p>Below is a User Control that is registered through Web.config - the control simply takes today's date and adds 90 days.</p>
-        <cronan:NinetyDays runat="server" id="ascx90days"></cronan:NinetyDays>
+        <cronan:NinetyDays runat="server" ID="ascx90days"></cronan:NinetyDays>
         <p>
             <asp:RadioButton ID="rdoLongDate" runat="server" Text="Long Date" Checked="true" GroupName="footerFormat" />
             <br />
@@ -30,9 +27,8 @@
             <asp:Button ID="cmdChangeFooterFormat" runat="server" Text="Update Footer Format" />
         </p>
     </div>
-    </form>
+
     <footer class="footer">
         <cronan:Footer runat="server" ID="ascxFooter" />
     </footer>
-</body>
-</html>
+</asp:Content>

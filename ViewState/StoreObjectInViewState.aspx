@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StoreObjectInViewState.aspx.cs" Inherits="BeginningASP.NET4._5.ViewState.StoreObjectInViewState" %>
+﻿<%@ Page Title="Store Object in ViewState" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="StoreObjectInViewState.aspx.cs" Inherits="BeginningASP.NET4._5.ViewState.StoreObjectInViewState" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>StoreObjectInViewState</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">  
     <style>
         .inputDiv {
             width: 350px;
@@ -29,9 +25,9 @@
             border:1px solid #000;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <div class="inputDiv">
                 <label for="txtFirstName">FirstName:</label>&nbsp;<asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
@@ -52,6 +48,4 @@
             <asp:Label ID="lblResult" runat="server"></asp:Label>
 
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>

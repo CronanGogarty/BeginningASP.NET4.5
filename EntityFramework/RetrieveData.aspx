@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="RetrieveData.aspx.cs" Inherits="BeginningASP.NET4._5.EntityDataModels.RetrieveData" %>
+﻿<%@ Page Title="Retrieve Data" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="RetrieveData.aspx.cs" Inherits="BeginningASP.NET4._5.EntityDataModels.RetrieveData" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <%--<h2>Retrieve data using Entity Data Model</h2>--%>

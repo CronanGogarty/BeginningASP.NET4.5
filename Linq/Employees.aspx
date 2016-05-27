@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="BeginningASP.NET4._5.Linq.Employees" %>
+﻿<%@ Page Title="LINQ to Objects" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Employees.aspx.cs" Inherits="BeginningASP.NET4._5.Linq.Employees" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
     <%--<h2>Create a collection of employee objects</h2>--%>

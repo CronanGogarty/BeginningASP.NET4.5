@@ -1,13 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QueryStringReceiver.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.QueryStringReceiver" %>
+﻿<%@ Page Title="QueryString Example - Receiving" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="QueryStringReceiver.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.QueryStringReceiver" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>QueryString Example - Receiving</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <asp:Label ID="lblProduct" runat="server"></asp:Label>
         <br />
@@ -21,6 +14,4 @@
         <br />
         <asp:Button ID="cmdRemoveCookie" runat="server" Text="Remove Cookie" OnClick="cmdRemoveCookie_Click" />
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

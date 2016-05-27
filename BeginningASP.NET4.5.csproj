@@ -89,6 +89,7 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="Controls\ShowSource.ascx" />
     <Content Include="EntityFramework\EntityDataSource.aspx" />
     <Content Include="EntityFramework\LINQToEntities.aspx" />
     <Content Include="EntityFramework\Relationships.aspx" />
@@ -299,6 +300,13 @@
     </Compile>
     <Compile Include="Controls\LinkMenu.ascx.designer.cs">
       <DependentUpon>LinkMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShowSource.ascx.cs">
+      <DependentUpon>ShowSource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ShowSource.ascx.designer.cs">
+      <DependentUpon>ShowSource.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\SiteMenu.ascx.cs">
       <DependentUpon>SiteMenu.ascx</DependentUpon>
