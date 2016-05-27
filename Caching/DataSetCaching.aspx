@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <p>DataSet Caching</p>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:CheckBoxList runat="server" ID="chkColumns"></asp:CheckBoxList>

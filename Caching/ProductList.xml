@@ -6,7 +6,7 @@
       Product One is an exciting new widget that will
       simplify your life.
     </description>
-    <cost>27.91</cost>
+    <cost>29.90</cost>
     <shipping>2.95</shipping>
   </product>
   <product>
@@ -15,7 +15,7 @@
       Product two is an exciting new APP that will
       simplify your life.
     </description>
-    <cost>10.95</cost>
+    <cost>12.94</cost>
     <shipping>0.00</shipping>
   </product>
   <product>
@@ -23,7 +23,7 @@
     <description>
       Product One is a football.
     </description>
-    <cost>38.51</cost>
+    <cost>40.50</cost>
     <shipping>9.95</shipping>
   </product>
   <product>
@@ -31,7 +31,7 @@
     <description>
       Product Four is a stack of old CDs.
     </description>
-    <cost>20.95</cost>
+    <cost>22.94</cost>
     <shipping>5.22</shipping>
   </product>
 </productListing>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BeginningASP.NET4._5.Login" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BeginningASP.NET4._5.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         #ContentPlaceHolder1_valUsernameRqdFieldValidator,

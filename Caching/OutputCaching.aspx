@@ -3,7 +3,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <p>Output Caching</p>
+    <p>This page will be cached for 20 seconds.<br />Refresh the page and you will see that the DateTime below does not refresh until 20 seconds have elapsed.</p>
     <!-- this page will be cached for 20 seconds;  -->
     <!-- VaryByParam=None means that parameters in the QueryString will still load the cached page -->
     <!-- VaryByParam="*" means that ASP.NET will cache separate copies of the page for different query string arguments -->

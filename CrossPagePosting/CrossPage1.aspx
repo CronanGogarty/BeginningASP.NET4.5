@@ -1,11 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CrossPage1.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.CrossPage1" %>
+﻿<%@ Page Title="CrossPagePosting - CrossPage1" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="CrossPage1.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.CrossPage1" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>CrossPagePosting - CrossPage1</title>
-    <style>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <style>
         .inputDiv {
             width: 350px;
             padding: 5px;
@@ -31,9 +27,9 @@
             border: 1px solid #000;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <div class="inputDiv">
                 <label for="txtFirstName">FirstName:</label>&nbsp;<asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
@@ -48,6 +44,5 @@
                 <asp:Button ID="cmdCrossPagePost" runat="server" PostBackUrl="~/CrossPagePosting/CrossPage2.aspx" Text="Post To CrossPage2" />
             </div>
         </div>
-    </form>
-</body>
-</html>
+
+    </asp:Content>

@@ -160,7 +160,8 @@ nav,
     .divInput textarea,
     .divInput [id^="sel"],
     .divInput [id^="cmd"],
-    .divInput span[id^="val"] {
+    .divInput span[id^="val"],
+    .divInput span[id$="Validator"] {
         float: right;
     }
 

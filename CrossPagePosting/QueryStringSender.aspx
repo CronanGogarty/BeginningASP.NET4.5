@@ -1,13 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QueryStringSender.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.QueryStringSender" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>QueryString Example - Sending</title>
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Title="QueryString Example - Sending" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="QueryStringSender.aspx.cs" Inherits="BeginningASP.NET4._5.CrossPagePosting.QueryStringSender" %>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <asp:ListBox ID="lstProducts" runat="server" Width="200" Height="200">
 
@@ -18,6 +10,4 @@
         <br />
         <asp:Button ID="cmdSendQuery" runat="server" Text="Show Product" OnClick="cmdSendQuery_Click" />
     </div>
-    </form>
-</body>
-</html>
+    </asp:Content>
