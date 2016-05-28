@@ -27,7 +27,7 @@ namespace BeginningASP.NET4._5.UserControls
         //ensure that we are passing our custom LinkClickedEventArgs object instead of the generic EventArgs object
         protected void LinkClicked(object sender, LinkClickedEventArgs e)
         {
-            lblClick.Text = "Click detected." + e.Url;
+            lblClick.Text = "Click detected = " + e.Url;
         }
     }
 }

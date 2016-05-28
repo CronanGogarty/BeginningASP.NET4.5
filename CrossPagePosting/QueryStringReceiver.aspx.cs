@@ -49,9 +49,13 @@ namespace BeginningASP.NET4._5.CrossPagePosting
         protected void cmdRemoveCookie_Click(object sender, EventArgs e)
         {
             //to remove a cookie, simply set the expiry date in the past and add the cookie to the cookies collection
-            HttpCookie cookieToRemove = Request.Cookies["ProductCookie"];
-            cookieToRemove.Expires = DateTime.Now.AddDays(-1);
-            Response.Cookies.Add(cookieToRemove);
+            if (Request.Cookies["ProductCookie"] != null)
+            {
+                HttpCookie cookieToRemove = Request.Cookies["ProductCookie"];
+                cookieToRemove.Expires = DateTime.Now.AddDays(-1);
+                Response.Cookies.Add(cookieToRemove);
+            }
+            
         }
     }
 }

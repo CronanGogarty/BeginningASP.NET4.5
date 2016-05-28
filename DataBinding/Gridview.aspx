@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="Gridview Databinding" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="Gridview.aspx.cs" Inherits="BeginningASP.NET4._5.DataBinding.Gridview" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+    <p>Using the SqlDataSource object again, this time to bind to the GridView control and the DetailsView control.<br /><br />
+        Select a product from the dropdown list to see the product details in the GridView and DetailsView.<br />
+        Click "Edit" in the DetailsView to edit the product - click "Update" to commit your changes to the database.
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>Gridview</p>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Northwind %>" ConflictDetection="CompareAllValues" OldValuesParameterFormatString="original_{0}" OnUpdated="SqlDataSource1_Updated" 
         SelectCommand="SELECT * FROM Products WHERE ProductID=@ProductID" 
         UpdateCommand="UPDATE Products SET ProductName=@ProductName, UnitPrice=@UnitPrice, UnitsInStock=@UnitsInStock, UnitsOnOrder=@UnitsOnOrder, ReorderLevel=@ReorderLevel, Discontinued=@Discontinued WHERE ProductID=@ProductID AND ProductName=@original_ProductName AND UnitPrice=@original_UnitPrice AND UnitsInStock=@original_UnitsInStock AND UnitsOnOrder=@original_UnitsOnOrder AND ReorderLevel=@original_ReorderLevel AND Discontinued=@original_Discontinued">

@@ -45,9 +45,8 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
-    <p>Use the options below to generate a personalized greetings card.
-        <br />
-        This page uses AutoPostback features to update the greetings card immediately.
+    <p>An example of using the AutoPostback feature.<br /><br />This page builds upon the previous greeting card example and uses the AutoPostback feature to update the greetings card when you make a selection.<br />Simply make a selection from one of the options and see the greeting card update immediately.
+        
     </p>
 </asp:Content>
 

@@ -45,7 +45,7 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
-    <p></p>
+    <p>An example of using the PostBack to update content on the page.<br /><br />Choose a color and font from the appropriate dropdown lists, enter a numeric font-size value, choose a border style, check whether to use the default image or not, enter your greeting in the textbox and finally click "Update" to see your design.</p>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1" ID="Content">

@@ -29,6 +29,13 @@
     </style>
 </asp:Content>
 
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This is a simple example of transferring data between ASP.NET pages. On this page we create public properties that can be accessed by other pages. 
+        <br /><br />
+        Enter a first name and last name in the appropriate fields, select an age from the dropdown list and click on "Post To CrossPage2".
+    </p>
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <div class="inputDiv">

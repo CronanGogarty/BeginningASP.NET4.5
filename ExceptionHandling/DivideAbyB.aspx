@@ -29,9 +29,9 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
-    <p>An example of handling a divide-by-zero exception.
+    <p>An example of handling a DivideByZeroException exception.
         <br />
-        Just enter 0 as the divisor and submit to see the exception handling in action.
+        Just enter 0 as the divisor and submit to see the exception handling in action. 
     </p>
 </asp:Content>   
 
@@ -40,7 +40,7 @@
         <div class="divInput"><label for="txtInputA" id="lblInputA">Enter number A:</label>&nbsp;<asp:TextBox ID="txtInputA" runat="server"></asp:TextBox></div>
         <div class="divInput"><label for="txtInputB" id="lblInputB">Enter number B:</label>&nbsp;<asp:TextBox ID="txtInputB" runat="server"></asp:TextBox></div>
         <asp:Button ID="cmdDivideAbyB" runat="server" Text="Divide A by B" OnClick="cmdDivideAbyB_Click" />
-
+        <br />
         <asp:Label ID="lblResult" runat="server"></asp:Label>
     </div>
 </asp:Content>

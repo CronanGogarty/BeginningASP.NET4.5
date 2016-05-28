@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Simple Validation Example" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="SimpleValidation.aspx.cs" Inherits="BeginningASP.NET4._5.ValidationControls.SimpleValidation" %>
 
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This page shows a simple example of using the RequiredFieldValidator, RangeValidator and the CompareValidator.<br /><br />
+        If you do not enter the required values as shown, the Validator controls will display the error messages and the form will not submit.
+    </p>
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
         <div class="divInput">

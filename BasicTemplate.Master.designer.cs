@@ -67,6 +67,15 @@ namespace BeginningASP.NET4._5 {
         protected global::System.Web.UI.WebControls.Label lblH1;
         
         /// <summary>
+        /// ascxGitHubLinks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::BeginningASP.NET4._5.Controls.GitHubLinks ascxGitHubLinks;
+        
+        /// <summary>
         /// header control.
         /// </summary>
         /// <remarks>

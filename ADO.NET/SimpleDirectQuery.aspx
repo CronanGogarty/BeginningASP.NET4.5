@@ -2,7 +2,8 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <p>Simple direct database connection and SQL query.</p>
+    <p>This page demonstrates a simple direct database connection. The ConnectionString is hard-coded in the aspx.cs file.
+    </p>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

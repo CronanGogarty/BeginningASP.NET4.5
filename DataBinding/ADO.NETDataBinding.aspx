@@ -2,6 +2,10 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+    <p>An example of binding a DataSet object to a listbox control.
+        <br /><br />
+        The DataSet object is not populated using a SQL query, instead the DataSet is populated using hard-coded values in the codebehind file.
+    </p>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

@@ -37,11 +37,17 @@
                     <h1>
                         <asp:Label runat="server" ID="lblH1"></asp:Label>
                     </h1>
+                    <cronan:GitHubLinks runat="server" ID="ascxGitHubLinks" />
+                    <br />
                     <asp:ContentPlaceHolder runat="server" ID="header">
                     </asp:ContentPlaceHolder>
+
+                    
+
                 </header>
 
                 <section id="mainSection">
+                    
                     <div id="contentHolder">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
@@ -71,5 +77,18 @@
         </footer>
 
     </form>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+        $(function () {
+            //console.log("jQuery running....");
+
+            //use this code to hide the link to CrossPage2.aspx
+            $("#navigation_ascxSiteMenu_SiteMapTreeViewt12").parentsUntil("table").css("display", "none");
+            $("#navigation_ascxSiteMenu_SiteMapTreeViewt14").parentsUntil("table").css("display", "none");
+
+        });
+    </script>
 </body>
 </html>

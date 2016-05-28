@@ -89,6 +89,7 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="Controls\GitHubLinks.ascx" />
     <Content Include="Controls\ShowSource.ascx" />
     <Content Include="EntityFramework\EntityDataSource.aspx" />
     <Content Include="EntityFramework\LINQToEntities.aspx" />
@@ -108,7 +109,6 @@
       <DependentUpon>Northwind.edmx</DependentUpon>
       <LastGenOutput>Northwind.cs</LastGenOutput>
     </Content>
-    <Content Include="Robots.txt" />
     <Content Include="Security\Web.config" />
     <Content Include="packages.config" />
     <EntityDeploy Include="Northwind.edmx">
@@ -293,6 +293,13 @@
     </Compile>
     <Compile Include="Controls\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GitHubLinks.ascx.cs">
+      <DependentUpon>GitHubLinks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\GitHubLinks.ascx.designer.cs">
+      <DependentUpon>GitHubLinks.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\LinkMenu.ascx.cs">
       <DependentUpon>LinkMenu.ascx</DependentUpon>

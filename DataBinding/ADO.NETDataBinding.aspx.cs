@@ -42,7 +42,7 @@ namespace BeginningASP.NET4._5.DataBinding
                 ds.Tables["Users"].Rows.Add(row);
 
                 row = ds.Tables["Users"].NewRow();
-                row["Name"] = "Pat O'Potatoes";
+                row["Name"] = "Seamus Pat O'Murphy";
                 row["Nationality"] = "Ireland";
 
                 ds.Tables["Users"].Rows.Add(row);
