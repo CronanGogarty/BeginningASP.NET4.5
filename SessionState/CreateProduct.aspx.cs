@@ -23,6 +23,8 @@ namespace BeginningASP.NET4._5.SessionState
             errorFlag = false;
             successFlag = false;
             errorOutput = "";
+            lblErrorOutput.Text = "";
+            lblOutput.Text = "";
 
             //use the application collection to store a count of the product objects created by this application
             Application.Lock();

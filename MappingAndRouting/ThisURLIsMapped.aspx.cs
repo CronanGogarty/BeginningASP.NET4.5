@@ -21,8 +21,8 @@ namespace BeginningASP.NET4._5.MappingAndRouting
             {
                 result = ex.Message;
             }
-            lnkPage.NavigateUrl = Page.GetRouteUrl("URLRoute1", new { productId = "product123" });
-            lnkPage.Text = "Follow this link...";
+            //lnkPage.NavigateUrl = Page.GetRouteUrl("URLRoute1", new { productId = "product123" });
+            //lnkPage.Text = "Follow this link...";
             lblProduct.Text = result;
         }
     }

@@ -27,6 +27,13 @@
     </style>
 </asp:Content>
 
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This is a more advanced demonstration of using ViewState to store data. In this example we create an object of type <a href="https://github.com/CronanGogarty/BeginningASP.NET4.5/blob/master/ViewState/SerializablePerson.cs" target="_blank">SerializablePerson</a> and store that in ViewState.
+        <br /><br />
+        Enter a first name and last name in the appropriate fields, select an age from the dropdown list and click on "Create Person". Once you have created a person and added the object to ViewState, you can retrieve that object by clicking on "Retrieve Person".
+    </p>
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
             <div class="inputDiv">

@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="ConnectionString in Web.config" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="ConnectionStoredInWebConfig.aspx.cs" Inherits="BeginningASP.NET4._5.ADO.NET.ConnectionStoredInWebConfig" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="header" runat="server">
-    <p>The ConnectionString property is set in Web.config.
+    <p>In this ConnectionString example the ConnectionString property is set in Web.config.<br /><br />
+        The SQL query is hard-coded in the .aspx.cs file.
     </p>
 </asp:Content>
 

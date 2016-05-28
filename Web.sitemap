@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="~/Default.aspx" title="Beginning ASP.NET 4.5"  description="Home">
-      <siteMapNode url="~/ProductTest.aspx" title="Get Product Details" description="Get Product Details" />
+      <!--<siteMapNode url="~/ProductTest.aspx" title="Get Product Details" description="Get Product Details" />-->
       <siteMapNode url="~/CurrencyConverter.aspx" title="Currency Converter"  description="Currency Converter" />
       <siteMapNode url="~/SimpleGreetingCard.aspx" title="Simple Greeting Card" description="Simple Greeting Card" />
       <siteMapNode url="~/GreetingsCard.aspx" title="Greeting Card"  description="Greeting Card" />
@@ -18,7 +18,9 @@
 
       <siteMapNode title="Transferring Information Between Pages" description="Examples of how to transfer information between ASP.NET Web Forms pages">
         <siteMapNode title="CrossPage Posting form input" url="~/CrossPagePosting/CrossPage1.aspx" description="Transferring data from one Web Forms page to another" />
+        <siteMapNode title="CrossPage Posting form input" url="~/CrossPagePosting/CrossPage2.aspx" description="Transferring data from one Web Forms page to another" />
         <siteMapNode title="CrossPage Posting via the QueryString " url="~/CrossPagePosting/QueryStringSender.aspx" description="Transferring data via the QueryString" />
+        <siteMapNode title="Retrieving data from the QueryString " url="~/CrossPagePosting/QueryStringReceiver.aspx" description="Retrieving data from the QueryString" />
       </siteMapNode>
 
       <siteMapNode title="Session State" description="Storing and retrieving data from Session state">

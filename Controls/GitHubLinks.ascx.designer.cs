@@ -7,18 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BeginningASP.NET4._5.MappingAndRouting {
+namespace BeginningASP.NET4._5.Controls {
     
     
-    public partial class ThisURLIsMapped {
+    public partial class GitHubLinks {
         
         /// <summary>
-        /// lblProduct control.
+        /// linkGitAspxPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProduct;
+        protected global::System.Web.UI.WebControls.HyperLink linkGitAspxPath;
+        
+        /// <summary>
+        /// linkGitCSPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkGitCSPath;
     }
 }

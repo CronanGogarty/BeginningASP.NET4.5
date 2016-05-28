@@ -1,7 +1,19 @@
 ﻿<%@ Page Title="Validation Groups" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="ValidationGroups.aspx.cs" Inherits="BeginningASP.NET4._5.ValidationControls.ValidationGroups" %>
 
 
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This page demonstrates grouping the ASP.NET Validation controls.<br /><br />Each section of the form is treated as a seperate group.<br /><br />
+        
+    </p>
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <style>
+        .divInput span[id$="Validator"] {
+            color:red;
+            padding-right:0.3em;
+        }
+    </style>
     <div>
         <div class="divInput">
             <label id="lblFirstName">First Name:</label>&nbsp;<asp:TextBox runat="server" ID="txtFirstName"></asp:TextBox>

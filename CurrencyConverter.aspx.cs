@@ -17,6 +17,9 @@ namespace BeginningASP.NET4._5
                 selCurrency.Items.Add(new ListItem("GBP", "0.65"));
                 selCurrency.Items.Add(new ListItem("CAD", "1.15"));
 
+                
+
+
             }
         }
 

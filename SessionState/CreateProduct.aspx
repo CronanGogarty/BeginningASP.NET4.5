@@ -1,4 +1,10 @@
-﻿<%@ Page Title="Create Product" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="CreateProduct.aspx.cs" Inherits="BeginningASP.NET4._5.SessionState.CreateProduct" %>
+﻿<%@ Page Title="Store Product in SessionState" MasterPageFile="~/BasicTemplate.Master" Language="C#" AutoEventWireup="true" CodeBehind="CreateProduct.aspx.cs" Inherits="BeginningASP.NET4._5.SessionState.CreateProduct" %>
+
+<asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
+    <p>This page stores an object of type <a href="https://github.com/CronanGogarty/BeginningASP.NET4.5/blob/master/SessionState/Product.cs" target="_blank">Product</a> in Session state. It also utilizes Application state to maintain a count of the number of products the application has created.<br /><br />
+        Enter a name, description, numeric ID, numeric price and click "Create Product". The application will increment the counter recording how many products this application has ceated. The product you have created has been stored in Session state. To retrieve the product from Session state click "Retrieve Product From SessionState".
+    </p>
+</asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
@@ -15,6 +21,7 @@
             <asp:Button ID="cmdSubmit" runat="server" Text="Create Product" OnClick="cmdSubmit_Click" /></div>
         <asp:Label ID="lblOutput" runat="server" Visible="false"></asp:Label>
         <asp:Label ID="lblErrorOutput" Visible="false" runat="server"></asp:Label>
+        <br />
         <%--        <asp:Button ID="cmdAddToSessionState" runat="server" Visible="false" Text="Add Product to SessionState" OnClick="cmdAddToSessionState_Click" />--%>
         <asp:Button ID="cmdRetreiveProductFromSessionState" runat="server" Visible="false" Text="Retreive Product From SessionState" OnClick="cmdRetreiveProductFromSessionState_Click" />
     </div>
