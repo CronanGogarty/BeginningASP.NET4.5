@@ -12,5 +12,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label runat="server" ID="lblDate"></asp:Label>
+    <br />
+    <asp:Button runat="server" Text="Refresh" UseSubmitBehavior="true" />
 </asp:Content>
 

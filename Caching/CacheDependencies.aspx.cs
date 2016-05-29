@@ -22,7 +22,8 @@ namespace BeginningASP.NET4._5.Caching
             productList = new XmlDocument();
             productList.Load(Server.MapPath("ProductList.xml"));
 
-            
+            xmlOut.Text = "";
+            lblResult.Text = "";
         }
 
         protected void cmdAddToCache_Click(object sender, EventArgs e)
@@ -78,6 +79,7 @@ namespace BeginningASP.NET4._5.Caching
             }
 
             xmlFile.Save(Server.MapPath("ProductList.xml"));
+            lblResult.Text = "<br />XML file has been altered.<br />Because the XML file has been altered, the Cache[\"ProductList\"] item has been removed from cache.";
         }
     }
 }

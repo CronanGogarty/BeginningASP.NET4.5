@@ -20,6 +20,24 @@ namespace BeginningASP.NET4._5.Linq
             employees.Add(new Employee(456, "John", "Self", "Mr"));
             employees.Add(new Employee(789, "Angela", "Schwarz", "Frau"));
             employees.Add(new Employee(321, "Josef", "Schultz", "Dr"));
+            employees.Add(new Employee(111, "Graham", "Geraghty", "Mr"));
+            employees.Add(new Employee(222, "Trevor", "Giles", "Dr"));
+            employees.Add(new Employee(333, "Sean", "Boylan", "Sir"));
+            employees.Add(new Employee(444, "Alex", "Ferguson", "Sir"));
+            employees.Add(new Employee(555, "Bjork", "Guðmundsdóttir", "Ms"));
+
+
+
+
+
+            gridMatches.DataSource = employees;
+            gridMatches.DataBind();
+
+            //button text
+            cmdAnonymousTypes.Text = "Return users where title == 'Mr'\nDefine a new anonymous type in Linq query";
+            cmdRetrieveDefinedType.Text = "Return users where title == 'Mr'\nUse a type already defined in the page";
+            cmdFilterByMethod.Text = "Filter using a custom method\nReturn employee.Title.Equals(\"Mr\")";
+            cmdReturnAllEmployees.Text = "Return all employees\nOrder by FirstName, LastName";
 
         }
 

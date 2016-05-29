@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="Using the EntityDataSource" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="EntityDataSource.aspx.cs" Inherits="BeginningASP.NET4._5.EntityFramework.EntityDataSource" %>
 
+<asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+    <p>Using the EntityDataSource control, it is possible to interact with the database without writing any code in the codebehind file.
+        <br /><br />
+        Selecting an employee will display the employee details in the GridView.<br />
+        Click "Edit" at the bottom of the GridView to edit the employee details.<br />
+        When you have completed editing the employee details, click "Update" to commit the edits to the database.<br />
+        <strong>Note:</strong> It is necessary to <a href="EntityDataSource.aspx">Refresh</a> the page to see your edits reflected in the employee list.
+    </p>
+</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
     <asp:EntityDataSource runat="server" ID="entityDataSource1" ConnectionString="name=NorthwindEntities1" EnableFlattening="false" DefaultContainerName="NorthwindEntities1" EntitySetName="Employees"  Select="it.[EmployeeID], it.[Title], it.[LastName], it.[FirstName], it.[City], it.[Country]">

@@ -9,7 +9,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <p>Reading Streams</p>
+    <p>An exmaple of reading a StreamReader to read the contents of a text file and output the data to a control.</p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:TextBox runat="server" ID="txtStreamReader" TextMode="MultiLine"></asp:TextBox>

@@ -170,6 +170,10 @@ namespace BeginningASP.NET4._5.EntityFramework
                     printExceptions(ex);
                 }
             }
+            else
+            {
+                result = "Please select a product to delete";
+            }
         }
 
         private void printExceptions(Exception ex)

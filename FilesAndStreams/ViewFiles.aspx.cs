@@ -15,13 +15,22 @@ namespace BeginningASP.NET4._5.FilesAndStreams
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            dir = Path.Combine(Request.PhysicalApplicationPath, "FilesAndStreams/Files");
+            dir = Path.Combine(Request.PhysicalApplicationPath, "FilesAndStreams\\Files");
 
             if (!Page.IsPostBack)
             {
                 try
                 {
                     string[] fileList = Directory.GetFiles(dir);
+
+
+                    //for (int i = 0; i < fileList.Length; i++)
+                    //{
+                    //    int index = fileList[i].LastIndexOf("Beginning");
+                    //    string fileStr = "~/" + fileList[i].Substring(index);
+                    //    fileStr = fileStr.Replace("\\", "/");
+                    //    fileList[i] = fileStr;
+                    //}
 
                     lstViewFiles.DataSource = fileList;
                     lstViewFiles.DataBind();
@@ -64,6 +73,7 @@ namespace BeginningASP.NET4._5.FilesAndStreams
         protected void lstViewFiles_SelectedIndexChanged(object sender, EventArgs e)
         {
             string file = lstViewFiles.SelectedItem.Text;
+            
             System.Text.StringBuilder outputString = new System.Text.StringBuilder();
             outputString.Append("<strong>");
             outputString.Append(file);

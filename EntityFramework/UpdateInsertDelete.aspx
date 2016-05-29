@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="Update Insert Delete with Entity Framework" Language="C#" MasterPageFile="~/BasicTemplate.Master" AutoEventWireup="true" CodeBehind="UpdateInsertDelete.aspx.cs" Inherits="BeginningASP.NET4._5.EntityFramework.UpdateInsertDelete" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
+    <p>An example of some common database interactions using the Entity Framework.<br /><br />
+        When the page loads, a subset of the columns in the Products table is returned for all products and bound to a GridView.<br />
+        You can select a product by clicking "Select" in the appropriate row. When you have selected a product, clicking on "Update" will update the product price by applying a 25% discount.
+        <br />
+        Clicking on "Insert" will insert a new product named "My New Product" with an ID value of (current highest ID + 1).<br />
+        To delete a product, select a product and click "Delete". <strong>Note:</strong> Please delete newly created products.
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:Label runat="server" ID="lblResult"></asp:Label>

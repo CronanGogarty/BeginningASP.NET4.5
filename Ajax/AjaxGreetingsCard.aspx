@@ -45,9 +45,8 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
-    <p>Use the options below to generate a personalized greetings card.
-        <br />
-        This page uses <strong>AJAX</strong> features to update the greetings card immediately.
+    <p>This page uses <strong>Ajax</strong> features to update the greetings card immediately.<br /><br />
+        This page sunctions identically to the earlier <a href="../GreetingsCard.aspx">GreetingsCard</a> example with one major difference, the updates occur without a postback. This makes the GreetingsCard designer more user-friendly.
     </p>
 </asp:Content>
 

@@ -13,7 +13,16 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="header" runat="server">
-    <p>Login</p>
+    <p>This is an example of an ASP.NET login page using forms authentication.<br /><br />
+
+        You have been redirected here because you have not been authenticated.<br />
+        In order to login simply enter any username and the password "secret".<br />
+        To remain logged in even after your session ends, click the "Keep me logged in:" checkbox, this will set a persistent cookie for 14 days.
+        <br /><br />
+
+        Obviously in a production environment, the username and password would be stored in encrypted format in a database.
+
+    </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="divInput">
