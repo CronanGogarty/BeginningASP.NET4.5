@@ -24,7 +24,7 @@ namespace BeginningASP.NET4._5.ADO.NET
             {
                 using (conn)
                 {
-                    connectionString =  WebConfigurationManager.ConnectionStrings["Pubs"].ConnectionString;
+                    connectionString =  WebConfigurationManager.ConnectionStrings["Northwind"].ConnectionString;
                     conn = new SqlConnection(connectionString);
 
                     cmd = new SqlCommand();

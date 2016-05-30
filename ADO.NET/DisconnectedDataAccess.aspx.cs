@@ -64,7 +64,7 @@ namespace BeginningASP.NET4._5.ADO.NET
             {
                 try
                 {
-                    connectionString = WebConfigurationManager.ConnectionStrings["Pubs"].ToString();
+                    connectionString = WebConfigurationManager.ConnectionStrings["Northwind"].ToString();
                     commandText = "SELECT * FROM dbo.authors ORDER BY au_lname";
 
                     connectionOpen = openConnection();

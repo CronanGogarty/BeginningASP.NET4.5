@@ -8,11 +8,11 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:SqlDataSource runat="server" ID="sqlDataSource1" ProviderName="System.Data.SqlClient" ConnectionString="<%$ ConnectionStrings:Pubs %>" SelectCommand="SELECT * FROM dbo.authors"></asp:SqlDataSource>
+    <asp:SqlDataSource runat="server" ID="sqlDataSource1" ProviderName="System.Data.SqlClient" ConnectionString="<%$ ConnectionStrings:Northwind %>" SelectCommand="SELECT * FROM dbo.authors"></asp:SqlDataSource>
     <label for="selAuthors">Select author lastname:</label><br /><asp:DropDownList AutoPostBack="true" runat="server" ID="selAuthors" DataSourceID="sqlDataSource1" DataTextField="au_lname" DataValueField="au_id"></asp:DropDownList>
     <br />
     <label for="sqlDataSourceAuthorDetails">To see the author's firstname:</label><br />
-    <asp:SqlDataSource runat="server" ID="sqlDataSourceAuthorDetails" ProviderName="System.Data.SqlClient" ConnectionString="<%$ ConnectionStrings:Pubs %>" SelectCommand="SELECT * FROM dbo.authors WHERE au_id=@AuthorID">
+    <asp:SqlDataSource runat="server" ID="sqlDataSourceAuthorDetails" ProviderName="System.Data.SqlClient" ConnectionString="<%$ ConnectionStrings:Northwind %>" SelectCommand="SELECT * FROM dbo.authors WHERE au_id=@AuthorID">
         <SelectParameters>
             <asp:ControlParameter ControlID="selAuthors" Name="AuthorID" PropertyName="SelectedValue" />
         </SelectParameters>

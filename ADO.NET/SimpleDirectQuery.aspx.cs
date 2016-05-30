@@ -20,7 +20,10 @@ namespace BeginningASP.NET4._5.ADO.NET
             {
                 try
                 {
-                    SqlConnection myConnection = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=pubs;Integrated Security=True");
+                    //local connetionstring
+                    //SqlConnection myConnection = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True");
+                    //production connectionstring
+                    SqlConnection myConnection = new SqlConnection(@"Data Source=SQL5026.Smarterasp.net;Initial Catalog=DB_9FEC4D_Northwind;User Id=DB_9FEC4D_Northwind_admin;Password=nanorcsk1w3b;");
 
                     try
                     {

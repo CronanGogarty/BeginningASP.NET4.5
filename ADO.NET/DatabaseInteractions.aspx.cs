@@ -15,7 +15,7 @@ namespace BeginningASP.NET4._5.ADO.NET
         SqlConnection connection;
         SqlCommand command;
         IDataReader reader;
-        private string connectionstring = WebConfigurationManager.ConnectionStrings["Pubs"].ConnectionString;
+        private string connectionstring = WebConfigurationManager.ConnectionStrings["Northwind"].ConnectionString;
         private string result, errorMessage, au_id = "";
         private bool errorRaised, connectionOpened = false;
         string commandText = "";

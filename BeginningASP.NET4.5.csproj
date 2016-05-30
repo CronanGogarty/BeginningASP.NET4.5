@@ -145,6 +145,15 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <Content Include="PRODUCTIONWeb.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PRODUCTIONWeb.Debug.config">
+      <DependentUpon>PRODUCTIONWeb.config</DependentUpon>
+    </Content>
+    <Content Include="PRODUCTIONWeb.Release.config">
+      <DependentUpon>PRODUCTIONWeb.config</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

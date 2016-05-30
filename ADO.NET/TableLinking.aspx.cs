@@ -16,7 +16,7 @@ namespace BeginningASP.NET4._5.ADO.NET
         SqlCommand cmd;
         SqlDataAdapter adapter;
         DataSet dataset;
-        private static string connectionString = WebConfigurationManager.ConnectionStrings["Pubs"].ToString();
+        private static string connectionString = WebConfigurationManager.ConnectionStrings["Northwind"].ToString();
         private string result, errorMessage, commandText = "";
         private bool errorRaised, connectionOpen = false;
 

@@ -13,7 +13,7 @@ namespace BeginningASP.NET4._5.ADO.NET
     public partial class ConnectionStoredInWebConfig : System.Web.UI.Page
     {
         private string result = "";
-        private static string connectionString = WebConfigurationManager.ConnectionStrings["Pubs"].ConnectionString;
+        private static string connectionString = WebConfigurationManager.ConnectionStrings["Northwind"].ConnectionString;
         
         
         protected void Page_Load(object sender, EventArgs e)
@@ -21,7 +21,7 @@ namespace BeginningASP.NET4._5.ADO.NET
             try
             {
                 SqlConnection myConnection = new SqlConnection(connectionString);
-                SqlCommand myCommand = new SqlCommand("select au_lname, au_fname, state from authors where dbo.authors.state = 'CA'");
+                SqlCommand myCommand = new SqlCommand("select FirstName, LastName, Country from authors where dbo.Employees.Country = 'USA'");
 
                 try
                 {

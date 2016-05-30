@@ -26,7 +26,10 @@
 <asp:Content runat="server" ID="header" ContentPlaceHolderID="header">
     <p>This page demonstrates writing and handling custom exceptions.
         <br /><br />
-        The custom exception is thrown when the user attmpts to divide by zero. To see the custom exception in action simply enter 0 into the number B field then click "Divide A by B" - the custom error is thrown by the divideAbyB method, handled by a custom error handler and the output is displayed below.<br />Generic exceptions are also handled, to see a System.FormatException exception enter a string or empty value and click "Divide A by B".
+        The custom exception is thrown when the user attmpts to divide by zero.
+        <br />
+        To see the custom exception in action simply enter 0 into the number B field then click "Divide A by B" - the custom error is thrown by the divideAbyB method, handled by a custom error handler and the output is displayed below.
+        <br />Generic exceptions are also handled, to see a System.FormatException exception enter a string or empty value and click "Divide A by B".
     </p>
 </asp:Content>
 

@@ -23,6 +23,8 @@ namespace BeginningASP.NET4._5.CrossPagePosting
 
             lblProduct.Text = "Selected Product = " + product;
             lblShowDetails.Text = "ShowDetails = " + showDetails;
+
+            lblRetrievedCookie.Text = "";
         }
 
         protected void cmdSetCookie_Click(object sender, EventArgs e)
@@ -31,6 +33,8 @@ namespace BeginningASP.NET4._5.CrossPagePosting
             productCookie.Value = product;
 
             Response.Cookies.Add(productCookie);
+
+            lblRetrievedCookie.Text = "Added " + product + " to cookie";
         }
 
         protected void cmdRetrieveCookie_Click(object sender, EventArgs e)
@@ -54,6 +58,10 @@ namespace BeginningASP.NET4._5.CrossPagePosting
                 HttpCookie cookieToRemove = Request.Cookies["ProductCookie"];
                 cookieToRemove.Expires = DateTime.Now.AddDays(-1);
                 Response.Cookies.Add(cookieToRemove);
+            }
+            else
+            {
+                lblRetrievedCookie.Text = "No cookie to delete";
             }
             
         }

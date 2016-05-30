@@ -59,7 +59,7 @@
       <siteMapNode title="DataBinding" description="Examples of Single-Value and Repeated-Value DataBinding in ASP.NET">
         <siteMapNode url="~/DataBinding/Single-ValueDataBinding.aspx" title="Single-Value DataBinding" description="Single-Value or Simple DataBinding" />
         <siteMapNode url="~/DataBinding/Repeated-ValueDataBinding.aspx" title="Repeated-Value DataBinding" description="Repeated-Value or List DataBinding" />
-        <siteMapNode url="~/DataBinding/DictionaryDataBind.aspx" title="Dictionary DataBinding" description="Databind a dictionary object to a control" />
+        <siteMapNode url="~/DataBinding/DictionaryDatabind.aspx" title="Dictionary DataBinding" description="Databind a dictionary object to a control" />
         <siteMapNode url="~/DataBinding/ADO.NETDataBinding.aspx" title="ADO.NET DataSet DataBinding" description="ADO.NET DataSet DataBinding" />
         <siteMapNode url="~/DataBinding/SQLDataSource.aspx" title="SQL DataSource" description="SQL DataSource" />
         <siteMapNode url="~/DataBinding/Gridview.aspx" title="Gridview Databinding" description="Gridview Databinding" />

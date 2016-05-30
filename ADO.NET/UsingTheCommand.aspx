@@ -19,9 +19,11 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>Below are the results of running the cmd.ExecuteReader method on a SQLCommand object with CommantText = "select au_lname, au_fname, state from authors where dbo.authors.state = 'CA'";
+    <p>Below are the results of running the cmd.ExecuteReader method on a SQLCommand object.
+        <br />CommandText = "select au_lname, au_fname, state from authors where dbo.authors.state = 'CA'";
         <br />
-        While the connection is open, I read each record in the DataReader using "while (reader.Read())" - as each record is read I append it to the output string.
+        While the connection is open, I read each record in the DataReader using "while (reader.Read())"
+        <br />as each record is read I append it to the output string.
     </p>
     <asp:Label runat="server" ID="lblResult"></asp:Label>
     <asp:Label runat="server" ID="lblExceptionMesssage" Visible="false"></asp:Label>

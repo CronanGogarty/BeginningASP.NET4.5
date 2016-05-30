@@ -16,6 +16,11 @@ namespace BeginningASP.NET4._5.Controls
             {
                 filePath = filePath.Replace('d', 'D');
             }
+            if (filePath.Contains("BeginningASP.NET4.5"))
+            {
+                int index = filePath.IndexOf("BeginningASP.NET4.5/");
+                filePath = filePath.Remove(index, 20);
+            }
             string gitAspxPath = "https://github.com/CronanGogarty/BeginningASP.NET4.5/blob/master" + filePath;
             string gitCSPath = "https://github.com/CronanGogarty/BeginningASP.NET4.5/blob/master" + filePath + ".cs";
             linkGitAspxPath.NavigateUrl = gitAspxPath;

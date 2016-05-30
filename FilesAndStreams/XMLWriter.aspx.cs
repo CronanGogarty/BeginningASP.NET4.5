@@ -93,7 +93,11 @@ namespace BeginningASP.NET4._5.FilesAndStreams
             }
             finally
             {
-                fs.Close();
+                if (fs!=null)
+                {
+                    fs.Close();
+                }
+                
             }
 
         }
