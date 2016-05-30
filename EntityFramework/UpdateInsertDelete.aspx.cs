@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace BeginningASP.NET4._5.EntityFramework
 {
@@ -23,6 +25,10 @@ namespace BeginningASP.NET4._5.EntityFramework
                 try
                 {
                     PopulateGridViewProducts();
+                }
+                catch (SqlException ex)
+                {
+                    printExceptions(ex);
                 }
                 catch (Exception ex)
                 {
@@ -58,7 +64,10 @@ namespace BeginningASP.NET4._5.EntityFramework
             
             gridViewProducts.DataBind();
 
-            highestIDValue = entities.Products.Count();
+            //highestIDValue = entities.Products.Count();
+            highestIDValue = entities.Products.Max(p => p.ProductID);
+
+            lblHighestID.Text = "Highest current ID = " + highestIDValue.ToString();
 
         }
 
@@ -69,6 +78,10 @@ namespace BeginningASP.NET4._5.EntityFramework
                 try
                 {
                     UpdateSelectedProduct(gridViewProducts.SelectedIndex);
+                }
+                catch (SqlException ex)
+                {
+                    printExceptions(ex);
                 }
                 catch (Exception ex)
                 {
@@ -106,6 +119,10 @@ namespace BeginningASP.NET4._5.EntityFramework
                 PopulateGridViewProducts();
                 gridViewProducts.SelectedIndex = selectedIndex;
             }
+            catch (SqlException ex)
+            {
+                printExceptions(ex);
+            }
             catch (Exception ex)
             {
                 printExceptions(ex);
@@ -114,26 +131,34 @@ namespace BeginningASP.NET4._5.EntityFramework
 
         protected void cmdInsert_Click(object sender, EventArgs e)
         {
+            highestIDValue = entities.Products.Max(p => p.ProductID); 
+            
+            Product newProduct = new Product();
+            newProduct.ProductID = highestIDValue++;
+            newProduct.ProductName = "My New Product";
+            newProduct.SupplierID = 1;
+            newProduct.CategoryID = 2;
+            newProduct.QuantityPerUnit = "1";
+            newProduct.UnitPrice = 19.99M;
+            newProduct.UnitsInStock = 36;
+            newProduct.UnitsOnOrder = 0;
+            newProduct.Discontinued = false;
+
+            entities.Products.Add(newProduct);
+            entities.SaveChanges();
+
+            PopulateGridViewProducts();
+
+            result = String.Format("The following product {0}, with an ID of {1}, has been added to the database.", newProduct.ProductName, newProduct.ProductID);
+
+
             try
             {
-                Product newProduct = new Product();
-                newProduct.ProductID = highestIDValue++;
-                newProduct.ProductName = "My New Product";
-                newProduct.SupplierID = 1;
-                newProduct.CategoryID = 2;
-                newProduct.QuantityPerUnit = "1";
-                newProduct.UnitPrice = 19.99M;
-                newProduct.UnitsInStock = 36;
-                newProduct.UnitsOnOrder = 0;
-                newProduct.Discontinued = false;
-
-                entities.Products.Add(newProduct);
-                entities.SaveChanges();
-
-                PopulateGridViewProducts();
-
-                result = String.Format("The following product {0}, with an ID of {1}, has been added to the database.", newProduct.ProductName, newProduct.ProductID);
-
+                
+            }
+            catch (SqlException ex)
+            {
+                printExceptions(ex);
             }
             catch (Exception ex)
             {
@@ -163,6 +188,10 @@ namespace BeginningASP.NET4._5.EntityFramework
 
                     result = string.Format("The following product \"{0}\" with ID = {1} was deleted from the database.", selectedProduct.ProductName, selectedProduct.ProductID);
 
+                }
+                catch (SqlException ex)
+                {
+                    printExceptions(ex);
                 }
                 catch (Exception ex)
                 {

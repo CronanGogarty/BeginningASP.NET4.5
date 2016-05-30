@@ -13,6 +13,15 @@ namespace BeginningASP.NET4._5.EntityFramework {
     public partial class UpdateInsertDelete {
         
         /// <summary>
+        /// lblHighestID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblHighestID;
+        
+        /// <summary>
         /// lblResult control.
         /// </summary>
         /// <remarks>

@@ -10,6 +10,8 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label runat="server" ID="lblHighestID"></asp:Label>
+    <br />
     <asp:Label runat="server" ID="lblResult"></asp:Label>
     <br />
     <asp:Label runat="server" ID="lblErrorMessage"></asp:Label>

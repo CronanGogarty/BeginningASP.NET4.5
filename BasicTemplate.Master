@@ -87,6 +87,9 @@
             //use this code to hide the link to CrossPage2.aspx
             $("#navigation_ascxSiteMenu_SiteMapTreeViewt12").parentsUntil("table").css("display", "none");
             $("#navigation_ascxSiteMenu_SiteMapTreeViewt14").parentsUntil("table").css("display", "none");
+            $("#navigation_ascxSiteMenu_SiteMapTreeViewt26").parentsUntil("table").css("display", "none");
+
+            
 
         });
     </script>

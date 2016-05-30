@@ -45,6 +45,7 @@
       <siteMapNode title="Mapping and Routing" description="URL Mapping and URL Routing">
         <siteMapNode url="~/MappingAndRouting/MapThisURL.aspx" title="URL Mapping" description="URL Mapping Example" />
         <siteMapNode url="~/MappingAndRouting/product/product123" title="Routed URL" description="This URL has been rerouted in the Global.asax" />
+        <siteMapNode url="~/MappingAndRouting/product/productInfo.aspx" title="Routed URL" description="This URL has been rerouted in the Global.asax" />
       </siteMapNode>
       
       <siteMapNode title="ADO.NET" description="ADO.NET and SQL">
