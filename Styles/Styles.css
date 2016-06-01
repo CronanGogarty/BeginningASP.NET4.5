@@ -223,3 +223,12 @@ nav,
     /*div produced by ASP.NET when showing trace information */
     background-color: #fff;
 }
+
+#underRightNavigationSmallAd    {
+    margin:auto;
+    text-align:center;
+}
+
+#underRightNavigationSmallAd img {
+    margin:auto;
+}
