@@ -89,6 +89,8 @@
     <Content Include="Caching\OutputCaching.aspx" />
     <Content Include="Caching\ProductList.xml" />
     <Content Include="Caching\SimpleDataCache.aspx" />
+    <Content Include="Components\ConsumeDBUtil.aspx" />
+    <Content Include="Components\SimpleConsumeComponent.aspx" />
     <Content Include="Controls\GitHubLinks.ascx" />
     <Content Include="Controls\ShowSource.ascx" />
     <Content Include="EntityFramework\EntityDataSource.aspx" />
@@ -295,6 +297,20 @@
     </Compile>
     <Compile Include="Category.cs">
       <DependentUpon>Northwind.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ConsumeDBUtil.aspx.cs">
+      <DependentUpon>ConsumeDBUtil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\ConsumeDBUtil.aspx.designer.cs">
+      <DependentUpon>ConsumeDBUtil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SimpleConsumeComponent.aspx.cs">
+      <DependentUpon>SimpleConsumeComponent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\SimpleConsumeComponent.aspx.designer.cs">
+      <DependentUpon>SimpleConsumeComponent.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
@@ -713,6 +729,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Components\Components.csproj">
+      <Project>{3fe3673e-d2d7-43b3-a845-81e0f2505506}</Project>
+      <Name>Components</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
