@@ -76,6 +76,12 @@
         <siteMapNode title="Security Fundamentals" url="~/Security/Fundamentals.aspx" description="Security Fundamentals" />
       </siteMapNode>
 
+      <siteMapNode title="Component Based Programming" description="Website Security">
+        <siteMapNode title="Simple Consume Component" url="~/Components/SimpleConsumeComponent.aspx" description="Consume a component" />
+        <siteMapNode title="Consume Database Utility Component" url="~/Components/ConsumeDBUtil.aspx" description="Consume Database Utility Component" />
+
+      </siteMapNode>
+
       <siteMapNode title="Caching" description="Using ASP.NET caching ">
         <siteMapNode title="Output Caching" url="~/Caching/OutputCaching.aspx" description="Basic Output Caching" />
         <siteMapNode title="Simple Data Caching" url="~/Caching/SimpleDataCache.aspx" description="Simple Data Caching" />
