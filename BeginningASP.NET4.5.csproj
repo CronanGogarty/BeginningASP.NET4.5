@@ -146,6 +146,8 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <Content Include="PRODUCTIONWeb.config">
       <SubType>Designer</SubType>

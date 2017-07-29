@@ -23,7 +23,7 @@ namespace BeginningASP.NET4._5.ADO.NET
                     //local connetionstring
                     //SqlConnection myConnection = new SqlConnection(@"Data Source=localhost\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True");
                     //production connectionstring
-                    SqlConnection myConnection = new SqlConnection(@"Data Source=SQL5026.Smarterasp.net;Initial Catalog=DB_9FEC4D_Northwind;User Id=DB_9FEC4D_Northwind_admin;Password=n0rthw1ndadmin;");
+                    SqlConnection myConnection = new SqlConnection(@"Data Source=SQL5026.Smarterasp.net;Initial Catalog=DB_9FEC4D_Northwind;User Id=DB_9FEC4D_Northwind_admin;Password=<<PASSWORD>>;");
 
                     try
                     {

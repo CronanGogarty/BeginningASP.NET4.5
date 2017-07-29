@@ -2,7 +2,7 @@
     background-image: url(../Images/IMG_1640.JPG);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     background-position: center,center;
 }
 
